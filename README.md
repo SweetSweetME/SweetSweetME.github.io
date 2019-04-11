@@ -6,7 +6,6 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### 认识我
 
-![Image](src)
 
 ```markdown
 Syntax highlighted code block
