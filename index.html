@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>bootstrap 框架</title>
+    <title>学习bootstrap 框架之练习网页示例</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -30,7 +30,7 @@
         <div class="container">
             <div class="row text-center text-muted">       <!-- row 和 container 的padding值互相抵消 -->
                 <div class="top_bar_1 col-md-2">
-                    <a class="text-muted" href="#">
+                    <a class="text-muted" href="javascript:;">
                         <i class="icon-phone"></i>
                         <span>关注微信号</span>
                         <span class="caret"></span>
@@ -47,33 +47,39 @@
                 </div>
                 <div class="top_bar_4 col-md-3">
                     <a class="btn-register btn-sm" role="button">免费注册</a>
-                    <a class="text-muted" role="button" data-toggle="modal" data-target="#lk_login">立即登录</a>
+                    <a class="text-muted btn-sm lk_login" role="button" data-toggle="modal" data-target="#lk_login">立即登录</a>
                 </div>
             </div>
         </div>
     </div>
 <!-- 下部分 -->
-    <nav class="navbar navbar-default navbar-static-top navbar_lk">
+    <nav class="navbar navbar-default navbar-static-top navbar_lk" id="listFixed">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#lk_nav" aria-expanded="false">
+                <button id="xs_list_btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#lk_nav" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <div id="lines">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                    <div id="times" style="display: none;">
+                        <span class=""></span>
+                        <span class=""></span>
+                    </div>
                 </button>
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" alt="撩课" width="100">
+                <a class="navbar-brand" href="javascript:;">
+                    <img id="headerLogo" src="img/logo.png" alt="撩课" width="100">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="lk_nav">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="javascript:;">关于我们</a></li>
+                <ul class="nav navbar-nav" id="navList">
+                    <li class="active hidden-xs"><a href="javascript:;">关于我们</a></li>
                     <li><a href="javascript:;">课程介绍</a></li>
                     <li><a href="javascript:;">热门课程</a></li>
-                    <li><a href="javascript:;">名师授课</a></li>
-                    <li><a href="javascript:;">课堂互动</a></li>
-                    <li><a href="javascript:;">联系我们</a></li>
+                    <li><a href="javascript:;">友情链接</a></li>
+                    <li class="hidden-xs"><a href="javascript:;">课堂互动</a></li>
+                    <li class="hidden-xs"><a href="javascript:;">联系我们</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
                     <li><a href="javascript:;">个人中心</a></li>
@@ -138,7 +144,11 @@
 
 <!--产品特色-->
 <section id="lk_product">
-
+    <!-- 标题 -->
+    <div class="title text-center">
+        <h1><strong>课程介绍</strong></h1>
+        <img src="img/star.png" alt="" class="img-responsive">
+    </div>
     <div class="container">
         <div class="row">
             <!-- 头部选项 -->
@@ -166,21 +176,21 @@
                                 <!-- 第一部分 -->
                                 <div id="pd_one_1" class="media">     <!-- 这里用id是因为文档结构现在较复杂 嵌套写class CSS 不方便 这里内容不多 所以用id -->
                                     <div class="media-left">
-                                        <a href="#">
+                                        <a href="javascript:;">
                                             <img class="media-object" src="img/weichat.png" alt="二维码" width="140">
                                         </a>
                                     </div>
-                                    <div class="media-body text-muted" style="padding-top: 100px">
+                                    <div id="weichatP" class="media-body text-muted">
                                         <h5 class="media-heading">更多咨询欢迎</h5>
                                         <h5 class="media-heading">关注撩课学院</h5>
                                     </div>
                                 </div>
                                 <!-- 第二部分 -->
                                 <ol id="pd_one_2" class="breadcrumb lead">
-                                    <li><a href="#">HTML5+全栈</a></li>
-                                    <li><a href="#">Python+人工智能</a></li>
-                                    <li><a href="#">JavaEE</a></li>
-                                    <li><a href="#">Go语言+区块链</a></li>
+                                    <li><a href="javascript:;">HTML5+全栈</a></li>
+                                    <li><a href="javascript:;">Python+人工智能</a></li>
+                                    <li><a href="javascript:;">JavaEE</a></li>
+                                    <li><a href="javascript:;">Go语言+区块链</a></li>
                                 </ol>
                                 <!-- 第三部分 -->
                                 <h1 id="pd_one_3">
@@ -228,7 +238,7 @@
                                 <h4 class="text-muted" style="margin: 15px 0;">
                                     玩转HTML5+全栈系列，玩转Python+人工智能系列，玩转JavaEE系列，玩转Go+区块链系列
                                 </h4>
-                                <div class="badge" style="padding: 15px 10px; cursor: pointer;">
+                                <div class="badge pd_left_btn">
                                     已更新3000+视频 | 100000+人订阅
                                 </div>
                             </div>
@@ -259,7 +269,7 @@
             <div class="col-md-6 lesson">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/person.jpg" alt="" class="media-object img-responsive img-circle img-thumbnail" width="100">
+                        <img src="img/person1.jpg" alt="" class="media-object img-responsive img-circle img-thumbnail">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">
@@ -270,7 +280,7 @@
                             李南江老师带你从零基础入门大前端开发，So Easy，Too Happy！
                         </p>
                     </div>
-                    <div class="media-right text-danger">
+                    <div class="media-right text-danger hidden-xs">
                         206节课
                     </div>
                 </div>
@@ -278,7 +288,7 @@
             <div class="col-md-6 lesson">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/person.jpg" alt="" class="media-object img-responsive img-circle img-thumbnail" width="100">
+                        <img src="img/person2.jpg" alt="" class="media-object img-responsive img-circle img-thumbnail">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">
@@ -289,7 +299,7 @@
                             叶建华老师带你轻松解读JavaScript的前生今世，全程案例驱动讲解！
                         </p>
                     </div>
-                    <div class="media-right text-danger">
+                    <div class="media-right text-danger hidden-xs">
                         256节课
                     </div>
                 </div>
@@ -297,7 +307,7 @@
             <div class="col-md-6 lesson">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/person.jpg" alt="" class="media-object img-responsive img-circle img-thumbnail" width="100">
+                        <img src="img/person3.jpg" alt="" class="media-object img-responsive img-circle img-thumbnail">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">
@@ -308,7 +318,7 @@
                             王顺子老师倾情打造，各种奇淫技巧层出不穷，赶紧到碗里来！
                         </p>
                     </div>
-                    <div class="media-right text-danger">
+                    <div class="media-right text-danger hidden-xs">
                         600+节课
                     </div>
                 </div>
@@ -316,7 +326,7 @@
             <div class="col-md-6 lesson">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/person.jpg" alt="" class="media-object img-responsive img-circle img-thumbnail" width="100">
+                        <img src="img/person4.jpg" alt="" class="media-object img-responsive img-circle img-thumbnail">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">
@@ -327,7 +337,7 @@
                             打通前后端，真实企业项目实操，内容涉及前端、后端、微信端，让你一次学个够！
                         </p>
                     </div>
-                    <div class="media-right text-danger">
+                    <div class="media-right text-danger hidden-xs">
                         400+节课
                     </div>
                 </div>
@@ -335,7 +345,7 @@
             <div class="col-md-6 lesson">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/person.jpg" alt="" class="media-object img-responsive img-circle img-thumbnail" width="100">
+                        <img src="img/person5.jpg" alt="" class="media-object img-responsive img-circle img-thumbnail">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">
@@ -346,7 +356,7 @@
                             高新强老师全程高能，只为成就更好的你！学Java，就选“高薪墙”！
                         </p>
                     </div>
-                    <div class="media-right text-danger">
+                    <div class="media-right text-danger hidden-xs">
                         700+节课
                     </div>
                 </div>
@@ -354,7 +364,7 @@
             <div class="col-md-6 lesson">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/person.jpg" alt="" class="media-object img-responsive img-circle img-thumbnail" width="100">
+                        <img src="img/person6.jpg" alt="" class="media-object img-responsive img-circle img-thumbnail">
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">
@@ -365,7 +375,7 @@
                             这里有用JQ做的小游戏，也有JQ做的QQ音乐，还有......你要学的，江哥这里都有！
                         </p>
                     </div>
-                    <div class="media-right text-danger">
+                    <div class="media-right text-danger hidden-xs">
                         200+节课
                     </div>
                 </div>
@@ -385,13 +395,12 @@
         <img src="img/star.png" alt="" class="img-responsive">
     </div>
     <ul class="logos">
-        <li><a href=""><img src="img/logo5.png" width="150" alt=""></a></li>
-        <li><a href=""><img src="img/logo5.png" width="150" alt=""></a></li>
-        <li><a href=""><img src="img/logo5.png" width="150" alt=""></a></li>
-        <li><a href=""><img src="img/logo5.png" width="150" alt=""></a></li>
-        <li><a href=""><img src="img/logo5.png" width="150" alt=""></a></li>
-        <li><a href=""><img src="img/logo5.png" width="150" alt=""></a></li>
-        <li><a href=""><img src="img/logo5.png" width="150" alt=""></a></li>
+        <li><a href="javascript:;"><img src="img/friend4.png" alt=""></a></li>
+        <li><a href="javascript:;"><img src="img/friend3.png" alt=""></a></li>
+        <li><a href="javascript:;"><img src="img/friend1.png" alt=""></a></li>
+        <li><a href="javascript:;"><img src="img/friend2.png" alt=""></a></li>
+        <li><a href="javascript:;"><img src="img/friend5.png" alt=""></a></li>
+        <li><a href="javascript:;"><img src="img/friend6.png" alt=""></a></li>
     </ul>
 
 </section>
@@ -402,17 +411,17 @@
 
     <div class="container">
         <div class="row" style="padding-top: 20px;">
-            <div class="col-md-3 col-md-offset-1 one">
+            <div class="col-md-3 col-md-offset-1 one hidden-xs">
                 <div class="row">
                     <ul class="col-md-6">
-                        <li><a href="">关于我们</a></li>
-                        <li><a href="">课程介绍</a></li>
-                        <li><a href="">热门课程</a></li>
+                        <li><a href="javascript:;">关于我们</a></li>
+                        <li><a href="javascript:;">课程介绍</a></li>
+                        <li><a href="javascript:;">热门课程</a></li>
                     </ul>
                     <ul class="col-md-6">
-                        <li><a href="">名师授课</a></li>
-                        <li><a href="">课堂互动</a></li>
-                        <li><a href="">联系我们</a></li>
+                        <li><a href="javascript:;">友情链接</a></li>
+                        <li><a href="javascript:;">课堂互动</a></li>
+                        <li><a href="javascript:;">联系我们</a></li>
                     </ul>
                 </div>
             </div>
@@ -421,9 +430,9 @@
                 <h5>联系电话：18034562345</h5>
                 <h5>地址邮箱：756863517@qq.com</h5>
             </div>
-            <div class="col-md-3 three">
+            <div class="col-md-3 three hidden-xs">
                 <h5>联系我们：</h5>
-                <a href="" title="">
+                <a href="javascript:;" title="" id="contact">
                     <img src="img/weixin.png" alt="" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="关注微信号">
                     <img src="img/weibo.png" alt="" class="img-circle" data-toggle="tooltip" data-placement="bottom" title="关注微博">
                 </a>

@@ -68,11 +68,164 @@ $(function(){     //闭包
 
 
 	// 导航处理
-	var allLi = $("#lk_nav li");
+	// 
+	// 导航样式处理
+	var flagList = true;
+	$("#xs_list_btn").on("click",function(){
+		if(flagList){
+			$("#lines").hide();
+			$("#times").show();
+			flagList = !flagList;
+		}else{
+			$("#lines").show();
+			$("#times").hide();
+			flagList = !flagList;
+		}
 
-	$(allLi[2]).on("click", function(){
-		$("html,body").animate({scrollTop: $("#lk_hot").offset().top}, 1000);
 	});
+	// 
+	// 
+	var allLi = $("#lk_nav li");
+	$("#headerLogo").on("click", function(){
+		$("html,body").animate({scrollTop: $("#lk_header").offset().top}, 800);
+	});;
+
+	$(allLi[0]).on("click", function(){
+		$("html,body").animate({scrollTop: $("#lk_about").offset().top - 71}, 800);
+	});
+	$(allLi[1]).on("click", function(){
+		$("html,body").animate({scrollTop: $("#lk_product").offset().top - 71}, 800);
+	});
+	$(allLi[2]).on("click", function(){
+		$("html,body").animate({scrollTop: $("#lk_hot").offset().top - 71}, 800);
+	});
+	$(allLi[3]).on("click", function(){
+		$("html,body").animate({scrollTop: $("#lk_hot").offset().top - 71}, 800);
+	});
+
+	//导航栏定到最上面
+	function getScrollTop(){  
+	    var scrollTop=0;  
+	    if(document.documentElement&&document.documentElement.scrollTop){  
+	        scrollTop=document.documentElement.scrollTop;  
+	    }else if(document.body){  
+	        scrollTop=document.body.scrollTop;
+	        // alert(1);
+	    }  
+	    return scrollTop;  
+	}
+
+	var oNavList = document.getElementById('navList');
+	var aLi = oNavList.getElementsByTagName('li');
+	var listFixed = document.getElementById('listFixed');
+
+	if(document.body.offsetWidth<450){
+
+		listFixed.className = 'navbar navbar-default navbar-fixed-top navbar_lk';
+		$("#lk_carousel")[0].style.marginTop = 70 + 'px';
+
+
+		$("#headerLogo").on("click", function(){
+			$("html,body").animate({scrollTop: $("#lk_header").offset().top - 71}, 400);
+		});;
+		$(allLi[1]).on("click", function(){
+			$("html,body").animate({scrollTop: $("#lk_product").offset().top - 71}, 400);
+		});
+		$(allLi[2]).on("click", function(){
+			$("html,body").animate({scrollTop: $("#lk_hot").offset().top - 71}, 400);
+		});
+		$(allLi[3]).on("click", function(){
+			$("html,body").animate({scrollTop: $("#lk_link").offset().top - 71}, 400);
+		});
+
+
+		document.onscroll = function(){
+			var scrollTop = getScrollTop();
+			if( scrollTop<20 ){
+				aLi[0].className = 'active hidden-xs';
+			}else if( scrollTop > 20&&scrollTop < 400 ){
+				for( var i=0; i<aLi.length; i++ ){
+					aLi[i].className = '';
+					if(i==0||i==4||i==5){
+						aLi[i].className = 'hidden-xs';
+					}
+				}
+				aLi[1].className = 'active';
+			}else if( scrollTop > 400&&scrollTop < 800 ){
+				for( var i=0; i<aLi.length; i++ ){
+					aLi[i].className = '';
+					if(i==0||i==4||i==5){
+						aLi[i].className = 'hidden-xs';
+					}
+				}
+				aLi[2].className = 'active';
+			}else if( scrollTop > 800&&scrollTop < 1200 ){
+				for( var i=0; i<aLi.length; i++ ){
+					aLi[i].className = '';
+					if(i==0||i==4||i==5){
+						aLi[i].className = 'hidden-xs';
+					}
+				}
+				aLi[3].className = 'active';
+			}
+		}
+	}else{
+
+		$("#headerLogo").on("click", function(){
+			$("html,body").animate({scrollTop: $("#lk_header").offset().top}, 800);
+		});;
+
+		$(allLi[0]).on("click", function(){
+			$("html,body").animate({scrollTop: $("#lk_about").offset().top - 71}, 800);
+		});
+		$(allLi[1]).on("click", function(){
+			$("html,body").animate({scrollTop: $("#lk_product").offset().top - 71}, 800);
+		});
+		$(allLi[2]).on("click", function(){
+			$("html,body").animate({scrollTop: $("#lk_hot").offset().top - 71}, 800);
+		});
+		$(allLi[3]).on("click", function(){
+			$("html,body").animate({scrollTop: $("#lk_link").offset().top - 71}, 800);
+		});
+
+
+		document.onscroll = function(){
+			var scrollTop = getScrollTop();
+			if( scrollTop<20 ){
+				aLi[0].className = 'active';
+				listFixed.className = 'navbar navbar-default navbar-static-top navbar_lk';
+			}else if( scrollTop > 160&&scrollTop < 500 ){
+				listFixed.className = 'navbar navbar-default navbar-fixed-top navbar_lk';
+				for( var i=0; i<aLi.length; i++ ){
+					aLi[i].className = '';
+				}
+				aLi[0].className = 'active';
+				// 固定定位也有top值
+			}else if( scrollTop > 500&&scrollTop < 1000 ){
+				listFixed.className = 'navbar navbar-default navbar-fixed-top navbar_lk';
+				for( var i=0; i<aLi.length; i++ ){
+					aLi[i].className = '';
+				}
+				aLi[1].className = 'active';
+			}else if( scrollTop > 1000&&scrollTop < 1500 ){
+				listFixed.className = 'navbar navbar-default navbar-fixed-top navbar_lk';
+				for( var i=0; i<aLi.length; i++ ){
+					aLi[i].className = '';
+				}
+				aLi[2].className = 'active';
+			}else if( scrollTop > 1500&&scrollTop < 2200 ){
+				listFixed.className = 'navbar navbar-default navbar-fixed-top navbar_lk';
+				for( var i=0; i<aLi.length; i++ ){
+					aLi[i].className = '';
+				}
+				aLi[3].className = 'active';
+			}
+		}
+	}
+
+	
+
+	// console.log(document.body.offsetWidth);
 
 
 

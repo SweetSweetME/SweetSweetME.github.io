@@ -6,12 +6,16 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #000;
 }
+ul{
+	padding: 0;
+}
 .btn-register { 
   color: #FFFFFF; 
   background-color: #006EBD; 
   border-color: #FFFFFF; 
 } 
- 
+
+.lk_login:hover,
 .btn-register:hover, 
 .btn-register:focus, 
 .btn-register:active, 
@@ -69,7 +73,7 @@ fieldset[disabled] .btn-register.active {
 #lk_about,#lk_hot,#lk_link{
 	padding: 20px 0;
 }
-#lk_about .title,#lk_hot .title,#lk_link .title{
+#lk_about .title,#lk_product .title,#lk_hot .title,#lk_link .title{
 	display: flex;
 	flex-direction: column;
 	justify-content: center; /*主轴居中*/
@@ -100,6 +104,7 @@ fieldset[disabled] .btn-register.active {
 	left: 50%;
 	margin-left: -45px;
 	margin-top: -10px;
+	padding-top: 20px;/*padding解决问题好办法！！！有留出空白地方，好看一些*/
 	z-index: 9999;
 }
 #lk_header .top_bar .container .row .top_bar_1 a:hover img{
@@ -127,6 +132,10 @@ fieldset[disabled] .btn-register.active {
 #lk_header .navbar_lk .navbar-brand{
 	height: 70px;
 	padding: 12px 15px;
+}
+#lk_header .navbar_lk .navbar-brand img{
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 #lk_header .navbar_lk .navbar-nav a{
@@ -216,7 +225,10 @@ fieldset[disabled] .btn-register.active {
 #lk_product #pd_two_1 h1{
 	margin-bottom: 15px;
 }
-
+.pd_left_btn{
+	padding: 15px 10px;
+	cursor: pointer;
+}
 
 /**********************产品特色的样式**********************/
 
@@ -239,6 +251,9 @@ fieldset[disabled] .btn-register.active {
 	font-size: 16px;
 	vertical-align: middle;
 }
+#lk_hot .lesson img{
+	width: 100px;
+}
 
 /**********************热门课程的样式**********************/
 
@@ -253,6 +268,9 @@ fieldset[disabled] .btn-register.active {
 #lk_link .logos li{
 	display: inline-block;
 	padding: 10px 20px;
+}
+#lk_link .logos li img{
+	width: 150px;
 }
 
 /**********************友情链接的样式**********************/
@@ -300,10 +318,136 @@ fieldset[disabled] .btn-register.active {
 #lk_footer .three a img{
 	margin-right: 15px;
 }
+#contact img{
+	width: 48px;
+	height: 48px;
+}
+#weichatP{
+	padding-top: 120px;
+}
 
 /**********************尾部的样式**********************/
 
 
+/*
+新增媒体查询，可在手机查看，iPad先咱不考虑
+ */
+@media screen and (max-width: 420px) {
+    #lk_header .navbar_lk .navbar-brand img{
+    	width: 60px;
+    	margin-top: 8px;
+    }
+    .carousel-control{
+    	font-size: 12px;
+    }
+    .carousel-indicators{
+    	bottom: -10px;
+    }
+    .carousel-indicators li{
+    	width: 6px;
+    	height: 6px;
+    	margin: 0;
+    }
+    .carousel-indicators .active{
+    	width: 6px;
+    	height: 6px;
+    	margin: 0;
+    }
+    #lk_about .title h1,#lk_product .title h1,#lk_hot .title h1,#lk_link .title h1{
+		font-size: 16px !important;
+		margin: 0 0 6px 0;
+	}
+	#lk_about .title img,#lk_product .title img,#lk_hot .title img,#lk_link .title img{
+		width: 40px;
+	}
+	#lk_product .nav{
+		font-size: 14px;
+	}
+	.container .row{
+		padding: 0 15px;
+	}
+	/*#pd_one_1{
+		padding-left: 40px;
+	}*/
+	#pd_one_1 img{
+		width: 120px;
+	}
+	#weichatP{
+		padding-top: 60px;
+	}
+	.lead{
+		font-size: 14px;
+	}
+	#pd_one_3{
+		font-size: 18px !important;
+	}
+	#pd_one_4 button{
+		width: 60px;
+		height: 30px;
+		padding: 2px;
+		font-size: 12px;
+	}
+	#lk_product #pd_two_1{
+		padding: 40px 0;
+	}
+	#lk_product #pd_two_1 h1{
+		font-size: 20px;
+	}
+	#lk_product #pd_two_1 p{
+		font-size: 12px;
+	}
+	#lk_product .pd_left h1{
+		font-size: 20px;
+	}
+	#lk_product .pd_left h3{
+		font-size: 14px;
+	}
+	#lk_product .pd_left h4{
+		font-size: 12px;
+	}
+	.pd_left_btn{
+		padding: 6px;
+		font-size: 10px;
+	}
+	#lk_hot .lesson img{
+		width: 60px;
+	}
+	#lk_hot .lesson h4{
+		font-size: 14px;
+	}
+	#lk_hot .lesson p{
+		font-size: 12px;
+	}
+	#lk_link .logos li img{
+		width: 100px;
+	}
+	#lk_footer{
+		height: auto;
+	}
+	#lk_footer .one, #lk_footer .two{
+		border: none;
+	}
+	#lk_footer .two{
+		height: auto;
+	}
+	#lk_footer .two h5{
+		font-size: 12px;
+	}
+	#times span{
+		display: block;
+		width: 20px;
+		height: 3px;
+		background-color: #2d6eb7;
+	}
+	#times span:nth-child(1){
+		transform: rotate(45deg);
+		transform-origin: 40%;
+	}
+	#times span:nth-child(2){
+		transform: rotate(-45deg);
+		transform-origin: 40%;
+	}
+}
 
 
 
