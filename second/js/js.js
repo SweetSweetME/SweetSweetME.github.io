@@ -103,13 +103,19 @@ window.onload = function(){
 		}
 	}
 
+
+	if(document.body.offsetWidth<450){
+		s = 300;
+	}else{
+		s = 1100;
+	}
 	var oQuote = document.getElementsByClassName('quote')[0];
 	var oCircle = document.getElementsByClassName('circle');
 	var oQuoteTimer = null;
 	var speed = 0;
 	function move(){
 			oQuote.style.marginLeft = speed + 'px';
-			if(speed == -300){
+			if(speed == -s){
 				for( var i=0; i<oCircle.length; i++ ){
 					oCircle[i].className = 'circle';
 				}
@@ -117,7 +123,7 @@ window.onload = function(){
 				speed-=1;
 				clearInterval(oQuoteTimer);
 				setTimeout(begin,1000);
-			}else if(speed == -600){
+			}else if(speed == -s*2){
 				for( var i=0; i<oCircle.length; i++ ){
 					oCircle[i].className = 'circle';
 				}
@@ -125,7 +131,7 @@ window.onload = function(){
 				speed-=1;
 				clearInterval(oQuoteTimer);
 				setTimeout(begin,1000);
-			}else if(speed == -900){
+			}else if(speed == -s*3){
 				for( var i=0; i<oCircle.length; i++ ){
 					oCircle[i].className = 'circle';
 				}

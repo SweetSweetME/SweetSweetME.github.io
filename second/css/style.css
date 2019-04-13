@@ -741,7 +741,7 @@ ul{
 		padding: 0 6px;
 	}
 	.nav-li-center{
-		display: none;
+		display: none!important;
 	}
 	.about-back .about-up > div.about-right{
 		padding: 1em 1.3em;
