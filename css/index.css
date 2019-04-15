@@ -21,6 +21,9 @@ body > div{
 .second h2 a{
 	color: rgb(255, 134, 11);
 }
+.third h2 a{
+	color: #00fff0;
+}
 h2 a{
 	display: inline-block;
 	width: 80%;
