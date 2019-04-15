@@ -1,0 +1,38 @@
+/**********************项目练习的样式**********************/
+
+.project{
+    margin: 50px auto 0;
+}
+.project .model{
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.project .model div img{
+    width: 160px;
+    height: 160px;
+}
+.project .model a{
+    font-size: 16px;
+    color: #000;
+    line-height: 2em;
+}
+
+/**********************项目练习的样式**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

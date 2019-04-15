@@ -1,0 +1,40 @@
+/**********************js课程的样式**********************/
+
+.jsStudy{
+	margin: 0 0 100px;
+}
+.jsStudy_sort{
+	width: 100%;
+	background-color: #fff;
+	margin: 30px 0;
+	box-shadow: 0px 0px 5px 0px #aaa;
+}
+.jsStudy_sort span{
+	padding: 10px 0;
+	margin: 0 20px;
+	font-size: 18px;
+	color: #00a79d;
+	display: inline-block;
+	cursor: pointer;
+}
+.jsStudy_sort span.active{
+	border-bottom: 3px solid #00a79d;
+}
+
+
+/**********************js课程的样式**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

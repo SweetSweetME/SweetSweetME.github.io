@@ -1,0 +1,121 @@
+/**********************问题锦集的样式**********************/
+.question{
+	background: #f4f4f4;
+	padding: 30px 0;
+}
+.question .question_up{
+	padding: 0 30px;
+}
+.question textarea{
+	width: 100%;
+	height: 400px;
+	outline: none;
+	padding: 10px 10px;
+	border: none;
+	background-color: #ffffff;
+	resize: none;
+	font-size: 16px;
+}
+#subBtn{
+	background-color: #ffffff;
+	margin-top: -2px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+}
+#subBtn button.submit{
+	background: radial-gradient(#0e948c 50%,#00a79d 100%);
+	/*background: radial-gradient(#000 50%,#333 80%);*/
+	border-radius: 5px;
+	/*box-shadow: 0px 0px 1px 0px #00a79d;*/
+	color: #ffffff;
+	display: inline-block;
+	padding: 0 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	border: none;
+}
+.question .question_up{
+	position: relative;
+	margin: 0 auto 30px;
+}
+.question .question_up .question_btn{
+	position: absolute;
+	bottom: 70px;
+	right: 45px;
+}
+.question .question_up .question_btn button{
+	border: none;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+}
+.question_btn_del{
+	background: url(../images/delete.png) center center / 30px no-repeat;
+}
+/*.question_btn_pic{
+	background: url(../images/picture.png) center center / 30px no-repeat;
+}*/
+.question_body{
+}
+.question_body .media{
+	margin: 0 15px;
+	background: #fff;
+	/*width: 60%;*/
+	padding: 5px 10px;
+	border-bottom: 1px solid #ececec;
+}
+.question_body .media p{
+	line-height: 40px;
+	font-size: 14px;
+	cursor: pointer;
+	width: 800px;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.question_body .media .media-right{
+	display: block;
+	float: right;
+	margin-top: -30px;
+}
+.question_body .media .media-right button{
+	border: none;
+	background: #fff url(../images/like.png) left center / 20px no-repeat;
+	padding: 5px 10px 5px 30px;
+}
+.question_body .media .media-right button i{
+	font-style: normal;
+}
+.question_body .media .media-right span{
+	border: none;
+	background: #fff url(../images/see.png) left center / 20px no-repeat;
+	padding: 5px 10px 5px 30px;
+}
+.question_more{
+	margin-top: 40px;
+	text-align: center;
+}
+.question_more a{
+	color: #00a79d;
+	font-size: 18px;
+}
+/**********************问题锦集的样式**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

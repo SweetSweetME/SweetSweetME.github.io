@@ -1,0 +1,51 @@
+/**********************题库过招的样式**********************/
+
+.testHtml{
+	padding: 0 30px;
+}
+.testHtml h3{
+	margin: 30px 0;
+	padding: 10px 0;
+	background-color: #dbeeed;
+}
+.testHtml p{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.testHtml p:last-child{
+	text-align: right;
+}
+.testHtml p label{
+	color: #3c3c3c;
+}
+.testHtml button{
+	border: 1px solid #00a79d;
+	background-color: #00a79d;
+	padding: 5px 10px;
+	color: #ffffff;
+	border-radius: 5px;
+	font-size: 14px;
+	margin-right: 100px;
+}
+.score h4{
+	margin: 100px 0;
+	text-align: center;
+}
+
+/**********************题库过招的样式**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,192 @@
+/**********************js课程的样式**********************/
+
+.lesson_details .lesson_details_up{
+	margin: 30px 0;
+	display: flex;
+	box-shadow: 0px 0px 5px 0px #aaa;
+	padding: 20px;
+}
+.lesson_details .lesson_details_up>div.lesson_details_img{
+	width: 35%;
+	margin-right: 40px;
+}
+.lesson_details .lesson_details_up>div.lesson_details_img img{
+	width: 100%;
+}
+.lesson_details h3{
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+.series_lesson_thumbnail_up{
+	background-color: transparent !important;
+}
+
+.catalogue{
+	box-shadow: 0px 0px 5px 0px #aaa;
+	margin-bottom: 30px;
+}
+.catalogue_caption{
+	font-size: 18px;
+	line-height: 40px;
+	padding-left: 18px;
+	border-bottom: 1px solid #00a79d;
+}
+.sec_model>div{
+	padding-left: 18px;
+	line-height: 36px;
+}
+.catalogue_sec{
+	background-color: #eee;
+	display: flex;
+	font-size: 16px;
+}
+.catalogue_sec p{
+	margin-right: 30px;
+}
+.catalogue_con{
+	background-color: #fff;
+	margin-bottom: 5px;
+	position: relative;
+}
+.catalogue_con>div{
+	display: flex;
+	font-size: 14px;
+	border-bottom: 1px solid #cae0de;
+	position: relative;
+}
+.catalogue_con>div>p{
+	margin-right: 30px;
+}
+.catalogue_con>div>p:nth-child(1){
+	width: 5%;
+}
+.catalogue_con>div>p:nth-child(3){
+	width: 80%;
+	padding-left: 30px; 
+}
+.catalogue_con>div a{
+	display: none;
+}
+.catalogue_con>div:hover span{
+	display: none;
+}
+.catalogue_con>div:hover a{
+	display: inline-block;
+	color: #00a79d;
+	font-size: 16px;
+}
+.catalogue_con div.progress_circle{
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	left: 7.1%;
+	margin-left: -7px;
+	width: 16px;
+	height: 16px;
+	/*box-shadow: 0px 0px 3px 0px #00a79d;*/
+	background-color: #fff;
+	border: 1px solid #00a79d;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.catalogue_con div.progress_circle>div:nth-child(1),.catalogue_con div.progress_circle div:nth-child(2){
+	width: 8px;
+	height: 16px;
+	position: absolute;
+}
+.catalogue_con div.progress_circle>div:nth-child(1){
+	/*background-color: red;*/
+	top: 0;
+	left: -1px;
+}
+.catalogue_con div.progress_circle>div:nth-child(2){
+	/*background-color: blue;*/
+	bottom: 0;
+	right: -1px;
+}
+.catalogue_con div.progress_line{
+	position: absolute;
+	top: 24px;
+	left: 7.1%;
+	width: 2px;
+	height: 26px;
+	background-color: #00a79d;
+}
+.catalogue_con div:last-child div.progress_line{
+	background-color: transparent;
+}
+
+
+
+/*------------------*/
+.rect1{
+	width: 8px;
+	height: 16px;
+	float: left;
+	overflow: hidden;
+}
+.rect2{
+	width: 8px;
+	height: 16px;
+	float: right;
+	overflow: hidden;
+}
+.circle1{
+	width: 8px;
+	height: 16px;
+	background-color: #00a79d;
+    border-radius: 0 8px 8px 0;
+    position: relative;
+    left: 8px;
+    transform-origin: left center;
+    /*animation: 1s rotate2 1s linear forwards;*/
+}
+.circle2{
+	width: 8px;
+	height: 16px;
+	background-color: #00a79d;
+    border-radius: 0 8px 8px 0;
+    transform-origin: left center;
+    transform: rotate(-180deg);
+    animation: rotate1 1s linear forwards;
+}
+@keyframes rotate1{
+	0%{
+		transform: rotate(-180deg);
+	}
+	100%{
+		transform: rotate(-90deg);
+	}
+}
+@keyframes rotate2{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(180 deg);
+	}
+}
+/*------------------*/
+
+footer{
+	position: absolute;
+	bottom: -200px;
+	left: 0;
+	width: 100%;
+}
+/**********************js课程的样式**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

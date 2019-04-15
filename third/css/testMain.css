@@ -1,0 +1,103 @@
+/**********************题库过招的样式**********************/
+
+.testMain ul{
+	width: 900px;
+	margin: 80px auto 0;
+}
+.testMain ul li{
+	color: #000;
+	font-size: 20px;
+	line-height: 50px;
+	margin-bottom: 130px;
+	position: relative;
+}
+.testMain ul li span{
+	background-color: #ffffff;
+	display: inline-block;
+	width: 120px;
+	padding-left: 40px;
+	box-sizing: content-box;
+	position: relative;
+}
+.testMain ul li span::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	left: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #00a79d;
+}
+.testMain ul li span::after{
+	content: "";
+	position: absolute;
+	top: 35px;
+	left: 9px;
+	display: block;
+	width: 2px;
+	height: 162px;
+	background: #00a79d;
+	z-index: 999;
+}
+.testMain ul li:last-child span::after{
+	height: 40px;
+}
+.testMain ul li strong{
+	color: #000;
+	font-size: 16px;
+	position: relative;
+	top: -16px;
+	left: 460px;
+}
+.testMain ul li:last-child::after{
+	content: '......';
+	display: block;
+	position: absolute;
+	bottom: -35px;
+	left: 36px;
+	width: 10px;
+	height: 2px;
+	background-color: transparent;
+	transform: rotate(90deg);
+}
+.testMain ul li div{
+	width: 900px;
+	height: 2px;
+	background: #00a79d;
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	z-index: -1;
+}
+.testMain ul li a{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #ffffff;
+	font-size: 20px;
+	border: 1px solid #00a79d;
+	padding: 0px 20px;
+	border-radius: 5px;
+	background-color: #00a79d;
+}
+
+/**********************题库过招的样式**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

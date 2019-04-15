@@ -1,0 +1,195 @@
+/**********************精品提炼的样式**********************/
+
+.quality{
+	box-shadow: 0px -4px 6px 0px #ececec;
+}
+.quality h2{
+	width: 172px;
+	height: 60px;
+	margin: 50px auto;
+	padding: 10px 30px;
+	line-height: 40px;
+	font-family: PingFangSC-Semibold;
+	font-size: 28px;
+	color: #0e1231;
+	position: relative;
+}
+.quality h2::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-left: 12px solid #00a79d;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	/*border-radius: 5px;*/
+}
+.quality h2::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-left: 12px solid #00a79d;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	/*border-radius: 5px;*/
+}
+.quality .thumbnail{
+	border: 1px solid #f4f4f4;
+	border-radius: 0;
+}
+/*.quality .thumbnail:hover{
+	box-shadow: 0px 0px 5px 1px #a1a1a1;
+}*/
+.quality .thumbnail{
+	position: relative;
+}
+.quality .thumbnail>div>p{
+	text-align: center;
+}
+.quality .thumbnail>div>p>span{
+	width: 17px;
+	height: 20px;
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	font-weight: normal;
+	color: #666666;
+	padding-left: 20px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.quality .thumbnail>div>p>span.quality_see{
+	background: url(../images/see.png) left center / 19px no-repeat;
+}
+.quality .thumbnail>div>p>span.quality_love{
+	background: url(../images/love.png) left center / 16px no-repeat;
+}
+.quality .thumbnail>div>p>span.quality_comment{
+	background: url(../images/comment.png) left center / 16px no-repeat;
+}
+
+/**********************精品提炼的样式**********************/
+
+
+/**********************交流学习的样式**********************/
+
+.comment{
+	margin-bottom: 50px;
+	position: relative;
+}
+.comment h2{
+	width: 172px;
+	height: 60px;
+	margin: 50px auto;
+	padding: 10px 30px;
+	line-height: 40px;
+	font-family: PingFangSC-Semibold;
+	font-size: 28px;
+	color: #0e1231;
+	position: relative;
+}
+.comment h2::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-left: 12px solid #00a79d;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	/*border-radius: 5px;*/
+}
+.comment h2::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-left: 12px solid #00a79d;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	/*border-radius: 5px;*/
+}
+.comment #comment_box{
+	padding-top: 30px;
+	position: relative;
+}
+.comment #comment_box::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.comment article{
+	float: left;
+	width: 259px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, .08);
+	border-radius: 8px;
+}
+.comment article .box .up{
+	display: flex;
+}
+.comment article .box h3{
+	font-size: 16px;
+	width: 75%;
+	color: #000;
+	line-height: 1.5em;
+	margin-bottom: 16px;
+}
+.comment article .box .up div{
+	width: 25%;
+	position: relative;
+}
+.comment article .box .up div img{
+	width: 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 50%;
+}
+.comment article .box p{
+	font-size: 12px;
+	color: #222;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+}
+.comment article .box span{
+	color: #00a79d;
+	font-size: 14px;
+	display: block;
+	padding-left: 30px;
+	margin-bottom: 10px;
+	background: url("../images/article.png") left / 20px no-repeat;
+}
+.comment article .btn-box{
+	position: relative;
+}
+.comment article .btn-box span{
+	font-size: 12px;
+	color: #000;
+	margin-right: 10px;
+}
+.comment article .btn-box a{
+	color: #00a79d;
+	font-size: 12px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+/**********************交流学习的样式**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>拾题网</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/memory.css" rel="stylesheet">    
+    <!--站点图标 本该用.ico后缀-->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<!-- 头部导航 -->
+
+<div>
+    <nav class="container">
+        <div class="head_up">
+            <div class="col-md-2 hidden-xs">
+                <div class="head_logo">
+                    <h1 class="hidden-xs hidden-sm hidden-md">拾题网</h1>
+                    <a href="../index.html"><img src="../images/logo.png" alt="拾题网" width="80"></a>
+                </div>
+            </div>
+            <div class="col-md-10 head_nav">
+                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#head_list" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <span></span>
+                <div class="collapse navbar-collapse" id="head_list">
+                    <ul class="nav navbar-nav" id="head_ul">
+                        <li><a href="../index.html">首页</a></li>
+                        <li>
+                            <a href="lessonstudy.html">课程学习</a>
+                            <ul class="second_nav">
+                                <li><a href="">HTML&CSS</a></li>
+                                <li><a href="jsStudy.html">JavaScript</a></li>
+                                <li><a href="">CSS3</a></li>
+                                <li><a href="">HTML5</a></li>
+                                <li><a href="">BootStrap</a></li>
+                                <li><a href="">Vue</a></li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <a href="memory.html">概念记忆</a>
+                            <ul class="second_nav">
+                                <li><a href="">HTML</a></li>
+                                <li><a href="memoryCSS.html">CSS</a></li>
+                                <li><a href="">JavaScript</a></li>
+                                <li><a href="">CSS3</a></li>
+                                <li><a href="">HTML5</a></li>
+                                <li><a href="">BootStrap</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="question.html">问题锦集</a></li>
+                        <li>
+                            <a href="testMain.html">题库过招</a>
+                            <ul class="second_nav">
+                                <li><a href="">HTML</a></li>
+                                <li><a href="">CSS</a></li>
+                                <li><a href="">JavaScript</a></li>
+                                <li><a href="">CSS3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="project.html">项目练习</a></li>
+                        <!-- js中写了li这里的代码 会清除class 避免bug出现 改用id -->
+                        <li id="icon">
+                            <a class="icon-search"></a>
+                            <a class="icon-bubble2"></a>
+                            <!--<a href="login.html" class="login">登录/注册</a>-->
+                            <a class="login_ready" href="javascript:;">
+                                <img src="../images/blog-3.jpg" alt="">
+                            </a>
+                            <ul class="menu">
+                                <li><a href="userInfo.html">详细信息</a></li>
+                                <li><a href="">退出</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="head_bread hidden-xs hidden-sm">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="#">概念记忆</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- /头部导航 -->
+
+<!-- 概念记忆 -->
+<section class="memory">
+    <div class="memory_head">
+        <div class="container">
+            <div class="memory_head_left">
+                <span>筛选：</span>
+            </div>
+            <div class="memory_head_right">
+                <input type="text" placeholder="搜索输入"><span></span>
+            </div>
+        </div>
+    </div>
+    <div class="memory_body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 memory_body_left">
+                    <div>
+                        <h3>HTML</h3>
+                        <a href="javascript:;">查看更多</a>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="memory_model">
+                        <a href="javascript:;" title="&lt;!DOCTYPE&gt;声明必须是HTML文档的第一行，位于&lt;html&gt;标签之前。">&lt;!DOCTYPE&gt;声明必须是HTML文档的第一行，位于&lt;html&gt;标签之前。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="&lt;select&gt; 元素定义下拉列表：&lt;option&gt;元素定义待选择的选项。列表通常会把首个选项显示为被选选项。您能够通过添加 selected 属性来定义预定义选项。">&lt;select&gt; 元素定义下拉列表：&lt;option&gt;元素定义待选择的选项。列表通常会把首个选项显示为被选选项。您能够通过添加 selected 属性来定义预定义选项。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="&lt;input type=&quot;submit&quot;&gt;定义提交表单数据至表单处理程序的按钮。表单处理程序（form-handler）通常是包含处理输入数据的脚本的服务器页面。在表单的 action 属性中规定表单处理程序（form-handler）">&lt;input type="submit"&gt;定义提交表单数据至表单处理程序的按钮。表单处理程序（form-handler）通常是包含处理输入数据的脚本的服务器页面。在表单的 action 属性中规定表单处理程序（form-handler）</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="URL 的英文全称是 Uniform Resource Locator，中文也译为“统一资源定位符”。">URL 的英文全称是 Uniform Resource Locator，中文也译为“统一资源定位符”。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="HTML 中的预留字符必须被替换为字符实体。在 HTML 中，某些字符是预留的。在 HTML 中不能使用小于号（<）和大于号（>），这是因为浏览器会误认为它们是标签。如果希望正确地显示预留字符，我们必须在 HTML 源代码中使用字符实体（character entities）。">HTML 中的预留字符必须被替换为字符实体。在 HTML 中，某些字符是预留的。在 HTML 中不能使用小于号（<）和大于号（>），这是因为浏览器会误认为它们是标签。如果希望正确地显示预留字符，我们必须在 HTML 源代码中使用字符实体（character entities）。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 memory_body_left">
+                    <div>
+                        <h3>CSS</h3>
+                        <a href="memoryCSS.html">查看更多</a>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="memory_model">
+                        <a href="javascript:;" title="对于display: inline;1.它不会独占一行，可以允许其他元素在其左右；2.宽度和高度由内容撑开，设置width和height是无效的；3.左右的margin和padding可以拉开距离，但是上下的margin和padding不能拉开距离。">对于display: inline;1.它不会独占一行，可以允许其他元素在其左右；2.宽度和高度由内容撑开，设置width和height是无效的；3.左右的margin和padding可以拉开距离，但是上下的margin和padding不能拉开距离。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="display: none;和visibility: hidden;的区别。前者不会再占据空间，就跟不存在一样；后者只是将透明度变成0，仍然占据其空间。">display: none;和visibility: hidden;的区别。前者不会再占据空间，就跟不存在一样；后者只是将透明度变成0，仍然占据其空间。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="id 选择器id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。id 选择器以 “#” 来定义。">id 选择器id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。id 选择器以 “#” 来定义。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="当使用 RGB 百分比时，即使当值为 0 时也要写百分比符号。但是在其他的情况下就不需要这么做了。比如说，当尺寸为 0 像素时，0 之后不需要使用 px 单位，因为 0 就是 0，无论单位是什么。">当使用 RGB 百分比时，即使当值为 0 时也要写百分比符号。但是在其他的情况下就不需要这么做了。比如说，当尺寸为 0 像素时，0 之后不需要使用 px 单位，因为 0 就是 0，无论单位是什么。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="padding简写属性设置元素所有内边距的宽度，或者设置各边上内边距的宽度。行内非替换元素上设置的内边距不会影响行高计算；因此，如果一个元素既有内边距又有背景，从视觉上看可能会延伸到其他行，有可能还会与其他内容重叠。元素的背景会延伸穿过内边距。不允许指定负边距值。">padding简写属性设置元素所有内边距的宽度，或者设置各边上内边距的宽度。行内非替换元素上设置的内边距不会影响行高计算；因此，如果一个元素既有内边距又有背景，从视觉上看可能会延伸到其他行，有可能还会与其他内容重叠。元素的背景会延伸穿过内边距。不允许指定负边距值。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 memory_body_left">
+                    <div>
+                        <h3>CSS3</h3>
+                        <a href="javascript:;">查看更多</a>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="memory_model">
+                        <a href="javascript:;" title="@keyframes 规则用于创建动画。在 @keyframes 中规定某项 CSS 样式，就能创建由当前样式逐渐改为新样式的动画效果。">@keyframes 规则用于创建动画。在 @keyframes 中规定某项 CSS 样式，就能创建由当前样式逐渐改为新样式的动画效果。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="当您在 @keyframes 中创建动画时，请把它捆绑到某个选择器，否则不会产生动画效果。通过规定至少以下两项 CSS3 动画属性，即可将动画绑定到选择器：规定动画的名称、规定动画的时长">当您在 @keyframes 中创建动画时，请把它捆绑到某个选择器，否则不会产生动画效果。通过规定至少以下两项 CSS3 动画属性，即可将动画绑定到选择器：规定动画的名称、规定动画的时长</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="请用百分比来规定变化发生的时间，或用关键词'from' 和 'to'，等同于 0% 和 100%。0% 是动画的开始，100% 是动画的完成。">请用百分比来规定变化发生的时间，或用关键词 "from" 和 "to"，等同于 0% 和 100%。0% 是动画的开始，100% 是动画的完成。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="CSS3 过渡是元素从一种样式逐渐改变为另一种的效果。要实现这一点，必须规定两项内容：规定您希望把效果添加到哪个 CSS 属性上
+、规定效果的时长">CSS3 过渡是元素从一种样式逐渐改变为另一种的效果。要实现这一点，必须规定两项内容：规定您希望把效果添加到哪个 CSS 属性上
+、规定效果的时长</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="如果时长未规定，则不会有过渡效果，因为默认值是 0。效果开始于指定的 CSS 属性改变值时。">如果时长未规定，则不会有过渡效果，因为默认值是 0。效果开始于指定的 CSS 属性改变值时。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 memory_body_left">
+                    <div>
+                        <h3>HTML5</h3>
+                        <a href="javascript:;">查看更多</a>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="memory_model">
+                        <a href="javascript:;" title="Input 类型 - email：email 类型用于应该包含 e-mail 地址的输入域。在提交表单时，会自动验证 email 域的值。">Input 类型 - email：email 类型用于应该包含 e-mail 地址的输入域。在提交表单时，会自动验证 email 域的值。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="Input 类型 - range：range 类型用于应该包含一定范围内数字值的输入域。range 类型显示为滑动条。">Input 类型 - range：range 类型用于应该包含一定范围内数字值的输入域。range 类型显示为滑动条。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="datalist 元素：datalist 元素规定输入域的选项列表。列表是通过 datalist 内的 option 元素创建的。如需把 datalist 绑定到输入域，请用输入域的 list 属性引用 datalist 的 id">datalist 元素：datalist 元素规定输入域的选项列表。列表是通过 datalist 内的 option 元素创建的。如需把 datalist 绑定到输入域，请用输入域的 list 属性引用 datalist 的 id</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="keygen 元素：keygen 元素的作用是提供一种验证用户的可靠方法。keygen 元素是密钥对生成器（key-pair generator）。当提交表单时，会生成两个键，一个是私钥，一个公钥。私钥（private key）存储于客户端，公钥（public key）则被发送到服务器。公钥可用于之后验证用户的客户端证书（client certificate）。目前，浏览器对此元素的糟糕的支持度不足以使其成为一种有用的安全标准。">keygen 元素：keygen 元素的作用是提供一种验证用户的可靠方法。keygen 元素是密钥对生成器（key-pair generator）。当提交表单时，会生成两个键，一个是私钥，一个公钥。私钥（private key）存储于客户端，公钥（public key）则被发送到服务器。公钥可用于之后验证用户的客户端证书（client certificate）。目前，浏览器对此元素的糟糕的支持度不足以使其成为一种有用的安全标准。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="定位用户的位置，HTML5 Geolocation API 用于获得用户的地理位置。鉴于该特性可能侵犯用户的隐私，除非用户同意，否则用户位置信息是不可用的。">定位用户的位置，HTML5 Geolocation API 用于获得用户的地理位置。鉴于该特性可能侵犯用户的隐私，除非用户同意，否则用户位置信息是不可用的。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 memory_body_left">
+                    <div>
+                        <h3>JavaScript</h3>
+                        <a href="javascript:;">查看更多</a>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="memory_model">
+                        <a href="javascript:;" title="HTML 中的脚本必须位于 &lt;script&gt; 与 &lt;/script&gt; 标签之间。脚本可被放置在 HTML 页面的 &lt;body&gt; 和 &lt;head&gt; 部分中。">HTML 中的脚本必须位于 &lt;script&gt; 与 &lt;/script&gt; 标签之间。脚本可被放置在 HTML 页面的 &lt;body&gt; 和 &lt;head&gt; 部分中。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="JavaScript 是脚本语言：JavaScript 是一种轻量级的编程语言。JavaScript 是可插入 HTML 页面的编程代码。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。JavaScript 很容易学习。">JavaScript 是脚本语言：JavaScript 是一种轻量级的编程语言。JavaScript 是可插入 HTML 页面的编程代码。JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。JavaScript 很容易学习。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="alert() 函数在 JavaScript 中并不常用，但它对于代码测试非常方便。">alert() 函数在 JavaScript 中并不常用，但它对于代码测试非常方便。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="JavaScript 与 Java 是两种完全不同的语言，无论在概念还是设计上。Java（由 Sun 发明）是更复杂的编程语言。ECMA-262 是 JavaScript 标准的官方名称。JavaScript 由 Brendan Eich 发明。它于 1995 年出现在 Netscape 中（该浏览器已停止更新），并于 1997 年被 ECMA（一个标准协会）采纳。">JavaScript 与 Java 是两种完全不同的语言，无论在概念还是设计上。Java（由 Sun 发明）是更复杂的编程语言。ECMA-262 是 JavaScript 标准的官方名称。JavaScript 由 Brendan Eich 发明。它于 1995 年出现在 Netscape 中（该浏览器已停止更新），并于 1997 年被 ECMA（一个标准协会）采纳。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="错误一定会发生当 JavaScript 引擎执行 JavaScript 代码时，会发生各种错误：可能是语法错误，通常是程序员造成的编码错误或错别字。可能是拼写错误或语言中缺少的功能（可能由于浏览器差异）。可能是由于来自服务器或用户的错误输出而导致的错误。当然，也可能是由于许多其他不可预知的因素。">错误一定会发生当 JavaScript 引擎执行 JavaScript 代码时，会发生各种错误：可能是语法错误，通常是程序员造成的编码错误或错别字。可能是拼写错误或语言中缺少的功能（可能由于浏览器差异）。可能是由于来自服务器或用户的错误输出而导致的错误。当然，也可能是由于许多其他不可预知的因素。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 memory_body_left">
+                    <div>
+                        <h3>BootStrap</h3>
+                        <a href="javascript:;">查看更多</a>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="memory_model">
+                        <a href="javascript:;" title="栅格系统：Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，随着屏幕或视口（viewport）尺寸的增加，系统会自动分为最多12列。它包含了易于使用的预定义类，还有强大的mixin 用于生成更具语义的布局。">栅格系统：Bootstrap 提供了一套响应式、移动设备优先的流式栅格系统，随着屏幕或视口（viewport）尺寸的增加，系统会自动分为最多12列。它包含了易于使用的预定义类，还有强大的mixin 用于生成更具语义的布局。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予 &lt;body&gt; 元素和所有段落元素。另外，&lt;p&gt; （段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。">Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予 &lt;body&gt; 元素和所有段落元素。另外，&lt;p&gt; （段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="缩略语：当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的 &lt;abbr&gt; 元素的增强样式。缩略语元素带有 title 属性，外观表现为带有较浅的虚线框，鼠标移至上面时会变成带有“问号”的指针。如想看完整的内容可把鼠标悬停在缩略语上（对使用辅助技术的用户也可见）, 但需要包含 title 属性。">缩略语：当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的 &lt;abbr&gt; 元素的增强样式。缩略语元素带有 title 属性，外观表现为带有较浅的虚线框，鼠标移至上面时会变成带有“问号”的指针。如想看完整的内容可把鼠标悬停在缩略语上（对使用辅助技术的用户也可见）, 但需要包含 title 属性。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="单独的表单控件会被自动赋予一些全局样式。所有设置了 .form-control 类的 &lt;input&gt;、&lt;textarea&gt; 和 &lt;select&gt; 元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。">单独的表单控件会被自动赋予一些全局样式。所有设置了 .form-control 类的 &lt;input&gt;、&lt;textarea&gt; 和 &lt;select&gt; 元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                    <div class="memory_model">
+                        <a href="javascript:;" title="按钮：为 &lt;a&gt;、&lt;button&gt; 或 &lt;input&gt; 元素添加按钮类（button class）即可使用 Bootstrap 提供的样式。">按钮：为 &lt;a&gt;、&lt;button&gt; 或 &lt;input&gt; 元素添加按钮类（button class）即可使用 Bootstrap 提供的样式。</a>
+                        <span>浏览量 1234</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /概念记忆 -->
+
+
+
+
+<!-- 尾部 -->
+
+<footer>
+    <div class="container">
+        <ul>
+            <li><a href="javascript:;">关于我们</a></li>
+            <li><a href="javascript:;">讲师加盟</a></li>
+            <li><a href="javascript:;">联系我们</a></li>
+            <li><a href="javascript:;">友情链接</a></li>
+        </ul>
+        <p>拾题网©2018-2050 www.basicstudy.com 基础学习平台</p>
+    </div>
+</footer>
+
+<!-- /尾部 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../js/jquery.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+<script src="../js/style.js"></script>
+</body>
+</html>

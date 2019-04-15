@@ -1,0 +1,158 @@
+/**********************系列课程的样式**********************/
+
+.series_lesson{
+	box-shadow: 0px -4px 6px 0px #ececec;
+}
+.series_lesson h2{
+	width: 172px;
+	height: 60px;
+	margin: 20px auto;
+	padding: 10px 30px;
+	line-height: 40px;
+	font-family: PingFangSC-Semibold;
+	font-size: 28px;
+	color: #0e1231;
+	position: relative;
+}
+.series_lesson h2::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-left: 12px solid #00a79d;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	/*border-radius: 5px;*/
+}
+.series_lesson h2::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-left: 12px solid #00a79d;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	/*border-radius: 5px;*/
+}
+.series_lesson .series_lesson_left>div{
+	width: 100%;
+	background-image: linear-gradient(151deg, #4bccc4 0%, #37b3ee 100%);
+	padding: 30px 0;
+	margin-bottom: 33px;
+}
+.series_lesson .series_lesson_left>div>h3{
+	line-height: 40px;
+	padding: 40px 0;
+	text-align: center;
+	font-family: Chalkduster;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+}
+@media screen and (min-width: 1200px){
+	.series_lesson .series_lesson_left>div{
+		width: 90%;
+	}
+	.series_lesson .series_lesson_left>div>h3{
+		line-height: 40px;
+		padding: 40px 0;
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 1200px) and (min-width: 992px){
+	.series_lesson .series_lesson_left>div>h3{
+		line-height: 20px;
+		padding: 20px 0;
+		font-size: 22px;
+	}
+}
+@media screen and (max-width: 992px) and (min-width: 786px){
+	.series_lesson .series_lesson_left>div>h3{
+		line-height: 20px;
+		padding: 20px 0;
+		font-size: 16px;
+	}
+}
+.series_lesson .series_lesson_left>div>a{
+	color: #ffffff;
+	display: block;
+	text-align: center;
+	padding-bottom: 33px;
+}
+.series_lesson_thumbnail_down .media-left>a{
+	display: block;
+	width: 37px;
+}
+.series_lesson_thumbnail_down .media-body h4{
+	font-size: 16px;
+}
+.series_lesson_thumbnail_up_see span{
+	padding-left: 20px;
+	background: url(../images/);
+}
+
+.series_lesson_thumbnail_up{
+	background-color: rgba(244, 244, 244, 0.69);
+	display: flex;
+	padding: 2px;
+}
+.series_lesson_thumbnail_up_star{
+	width: 80%;
+}
+.series_lesson_thumbnail_up_see{
+	width: 20%;
+}
+.series_lesson_thumbnail_up_see span{
+	background: url(../images/mine.png) left center / 16px no-repeat;
+}
+.star{
+	display: inline-block;
+}
+.star b{
+	width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/star.png) 0 0;
+}
+.series_lesson_right .thumbnail,.thumbnail{
+	padding: 0;
+	border: none;
+	box-shadow: 0px 0px 5px 1px #a9a9a9;
+	border: 5px;
+	overflow: hidden;
+	margin-bottom: 33px;
+}
+.series_lesson_right .thumbnail>a,.thumbnail>a{
+	display: block;
+	height: 150px;
+	overflow: hidden;
+}
+.series_lesson_right .thumbnail:hover,.thumbnail:hover{
+	box-shadow: 0px 0px 5px 1px #18a39b;
+}
+.thumbnail .caption{
+	padding: 0;
+}
+.series_lesson_thumbnail_up,.series_lesson_thumbnail_down{
+	margin-bottom: 8px;
+}
+.series_lesson_thumbnail_down{
+	padding: 0 5px;
+}
+/**********************系列课程的样式**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+/**********************项目练习的样式**********************/
+
+.projectOne{
+    padding: 0 30px;
+    color: #00a79d;
+    margin-bottom: 50px;
+}
+.projectOne h3{
+    color: #000000;
+    margin: 20px 0;
+}
+.projectOne h4{
+    margin-bottom: 10px;
+}
+.projectOne p{
+    font-size: 14px;
+}
+.projectOne div.img{
+    text-align: center;
+}
+.projectOne div img{
+    width: 80%;
+}
+.projectOne div p a{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/**********************项目练习的样式**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
