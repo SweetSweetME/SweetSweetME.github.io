@@ -1,7 +1,7 @@
 body{
 	margin: 0;/*8px-4*/
 }
-h2{
+h1,h2{
 	margin: 0;/*上下*/
 }
 a{
@@ -10,26 +10,88 @@ a{
 }
 body{
 	text-align: center;
-	padding: 60px;
+	/*background-color: black;*/
 }
-body > div{
-	margin-bottom: 40px;
+.first a{
+	color: rgb(33, 89, 72);
 }
-.first h2 a{
-	color: rgb(16, 255, 181);
+.second a{
+	color: rgb(125, 69, 12);
 }
-.second h2 a{
-	color: rgb(255, 134, 11);
+.third a{
+	color: #490372;
 }
-.third h2 a{
-	color: #00fff0;
+
+.box a{
+	display: block;
+	border: 1px solid #333;
+	font-size: 20px;
+	box-sizing: border-box;
+	padding: 100px 0;
+	background-color: #c7daff;
 }
-h2 a{
-	display: inline-block;
-	width: 80%;
-	border: 1px solid #3b5770;
-	padding: 10px;
-	border-radius: 5px;
-	font-size: .8em;
-	background-color: #3b5770;
+.backImg{
+	text-align: center;
+	background: url(../img/tm-img-05.jpg) center -40px / 1200px no-repeat;
+	height: 400px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	overflow: hidden;
 }
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.backImg h1{
+	font-family: 'SignPainter';
+	font-size: 10em;
+	margin-top: 100px;
+	color: #fff;
+	text-shadow: 2px 2px 10px #000;
+}
+.box>div>div{
+	float: left;
+	width: 30%;
+	margin: 0 20px;
+}
+@media screen and (max-width: 500px){
+	.container{
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	.backImg h1{
+		font-size: 3em;
+		width: 80%;
+		margin: 30px auto;
+		text-align: center;
+	}
+	.backImg{
+		height: 200px;
+	}
+	.box>div>div{
+		width: 100%;
+		margin: 0 auto 10px;
+	}
+	.box a{
+		padding: 40px 0;
+	}
+	.backImg{
+		text-align: center;
+		background: url(../img/tm-img-05.jpg) center -40px / 75% no-repeat;
+		height: 400px;
+		margin-top: 20px;
+		margin-bottom: 50px;
+		overflow: hidden;
+	}
+}
+
+
+
+
+
+
+
+
+
+
