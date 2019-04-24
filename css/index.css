@@ -1,8 +1,13 @@
 body{
 	margin: 0;/*8px-4*/
 }
-h1,h2{
+h1,h2,h3,h4,h5,h6,p{
 	margin: 0;/*上下*/
+}
+ul{
+	list-style: none;
+	margin: 0;/*16 0 16 0*/
+	padding: 0;/*0 0 0 40*/
 }
 a{
 	color: #000;/*blue*/
@@ -11,80 +16,438 @@ a{
 body{
 	text-align: center;
 	/*background-color: black;*/
+	min-width: 1170px;
 }
-.first a{
-	color: rgb(33, 89, 72);
-}
-.second a{
-	color: rgb(125, 69, 12);
-}
-.third a{
-	color: #490372;
-}
+/*---------------------头部-------------------*/
 
-.box a{
-	display: block;
-	border: 1px solid #333;
-	font-size: 20px;
-	box-sizing: border-box;
-	padding: 100px 0;
-	background-color: #c7daff;
-}
-.backImg{
-	text-align: center;
-	background: url(../img/tm-img-05.jpg) center -40px / 1200px no-repeat;
-	height: 400px;
-	margin-top: 20px;
-	margin-bottom: 50px;
-	overflow: hidden;
-}
 .container{
-	width: 1200px;
+	width: 1170px;
 	margin: 0 auto;
 }
-.backImg h1{
-	font-family: 'SignPainter';
-	font-size: 10em;
-	margin-top: 100px;
-	color: #fff;
-	text-shadow: 2px 2px 10px #000;
+#header .header_top_back{
+	width: 100%;
+	background-color: #f5f5f5;
 }
-.box>div>div{
+#header .header_top p{
+	text-align: right;
+	line-height: 40px;
+	font-size: 14px;
+}
+#header .nav_bar{
+	background-color: #ffffff;
+}
+#header .nav_bar li{
 	float: left;
+}
+#header .nav_bar li a{
+	display: inline-block;
+	width: 160px;
+	line-height: 60px;
+	margin-left: 40px;
+}
+#header .nav_bar ul{
+	overflow: hidden;
+}
+#header .nav_bar li a:hover{
+	background-color: #F9E1B4;
+}
+#header .nav_bar li a.active{
+	background-color: #F9E1B4;
+}
+#header .banner_Img{
+	height: 100vh;
+	background: url(../img/img1.jpg) left top / cover no-repeat;
+	opacity: .6;
+}
+#header .banner_Img_back{
+	position: relative;
+}
+#header .banner_Img_back h2{
+	font-size: 72px;
+	color: #ffffff;
+	position: absolute;
+	z-index: 9999;
+	top: 50%;
+	margin-top: -60px;
+	left: 0;
+	width: 100%;
+	line-height: 120px;
+	font-weight: 400;
+}
+
+/*---------------------头部-------------------*/
+
+
+/*---------------------自我介绍-------------------*/
+
+#introduce{
+	display: flex;
+}
+#introduce .intro_left, #introduce .intro_right{
+	width: 35%;
+	background-color: #F9E1B4;
+}
+#introduce .intro_center{
 	width: 30%;
-	margin: 0 20px;
 }
-@media screen and (max-width: 500px){
-	.container{
-		width: 100%;
-		padding: 0 20px;
-		box-sizing: border-box;
-	}
-	.backImg h1{
-		font-size: 3em;
-		width: 80%;
-		margin: 30px auto;
-		text-align: center;
-	}
-	.backImg{
-		height: 200px;
-	}
-	.box>div>div{
-		width: 100%;
-		margin: 0 auto 10px;
-	}
-	.box a{
-		padding: 40px 0;
-	}
-	.backImg{
-		text-align: center;
-		background: url(../img/tm-img-05.jpg) center -40px / 75% no-repeat;
-		height: 400px;
-		margin-top: 20px;
-		margin-bottom: 50px;
-		overflow: hidden;
-	}
+#introduce .intro_center h3{
+	margin-top: 50px;
+	line-height: 60px;
+	font-size: 36px;
+	font-weight: 400;
 }
+#introduce .intro_center h3 p{
+	line-height: 40px;
+	font-size: 18px;
+}
+#introduce .intro_center img{
+	margin: 80px 0 60px 0;
+	border-radius: 50%;
+}
+#introduce .intro_left h5, #introduce .intro_right h5{
+	font-size: 20px;
+	margin: 100px 0 40px 0;
+}
+#introduce .intro_left p, #introduce .intro_right p{
+	max-width: 400px;
+	width: 60%;
+	margin: 0 auto;
+	text-align: justify;
+	text-indent: 2em;
+	line-height: 40px;
+}
+#introduce .intro_left p span{
+	font-size: 85px;
+	position: relative;
+	top: 2px;
+	left: -6px;
+	line-height: 40px;
+}
+
+/*---------------------自我介绍-------------------*/
+
+
+/*-----------------------section标题-----------------------*/
+
+.sec h4{
+	font-size: 20px;
+	line-height: 120px;
+	background-color: #f5f5f5;
+	letter-spacing: 2px;
+	position: relative;
+	font-weight: 400;
+}
+.sec h4::before{
+	content: '';
+	position: absolute;
+	width: 56px;
+	height: 6px;
+	background-color: #F9E1B4;
+	left: 50%;
+	margin-left: -28px;
+	bottom: 20px;
+}
+
+/*-----------------------section标题-----------------------*/
+
+/*---------------------教育背景-------------------*/
+
+#education .time_node_back{
+	background-color: #ffffff;
+	padding: 120px 0 120px 0;
+	text-align: left;
+	position: relative;
+	left: 90px;
+	width: 500px;
+	margin: 0 auto;
+}
+#education .time_node_back .time_node1
+,#education .time_node_back .time_node2{
+	position: relative;
+	width: 500px;
+	height: 100px;
+	margin: 0 auto;
+	font-size: 20px;
+	line-height: 100px;
+}
+#education .time_node_back .time_node1::before
+,#education .time_node_back .time_node2::before{
+	content: '';
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-color: #F9D0B4;
+	top: 20px;
+	left: -120px;
+	border-radius: 50%;
+}
+#education .time_node_back .time_node1::after
+,#education .time_node_back .time_node2::after{
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: #F9E1B4;
+	top: 25px;
+	left: -115px;
+	border-radius: 50%;
+}
+#education .time_node_back .time_info{
+	width: 500px;
+	line-height: 200px;
+	margin: 0 auto;
+	position: relative;
+}
+#education .time_node_back .time_info::before{
+	content: '';
+	position: absolute;
+	width: 6px;
+	height: 240px;
+	background-color: #f5f5f5;
+	left: -93px;
+	top: -20px;
+}
+#education .time_node_back .time_info p{
+	font-size: 20px;
+}
+#education .time_node_back .time_info p span{
+	margin-right: 50px;
+}
+
+/*---------------------教育背景-------------------*/
+
+
+/*---------------------我的技能-------------------*/
+
+#skills{
+	padding-bottom: 100px;
+}
+#skills .skills{
+	width: 1000px;
+	margin: 0 auto;
+}
+#skills .skills h5{
+	font-size: 18px;
+	text-align: left;
+	font-weight: 400;
+	margin: 50px 0;
+}
+#skills .skills h6{
+	text-align: left;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 300;
+}
+#skills .skills_program_single progress{
+	width: 1000px;
+	height: 30px;
+	background-color: #f5f5f5;
+	border: none;
+	margin-bottom: 30px;
+}
+#skills .skills_program_single progress::-moz-progress-bar{
+	background-color: #F9E1B4;
+}
+.skills_program_circle{
+	display: inline-block;
+	margin: 0 40px 30px;
+}
+.skills_program_circle .circle_back{
+	width: 200px;
+	height: 200px;
+	background-color: #f5f5f5;
+	border-radius: 50%;
+	position: relative;
+}
+.skills_program_circle .circle_top{
+	width: 160px;
+	height: 160px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	line-height: 160px;
+	font-size: 16px;
+}
+.skills_program_circle canvas{
+	border-radius: 50%;
+}
+.skills_additional .skills_additional_rect{
+	width: 300px;
+	display: inline-block;
+	margin-right: 50px;
+}
+.skills_additional .skills_additional_rect .rect_back{
+	width: 100%;
+	height: 120px;
+	background-color: #f5f5f5;
+	margin-bottom: 30px;
+	position: relative;
+}
+.skills_additional .skills_additional_rect .rect{
+	width: 100%;
+	background-color: #F9E1B4;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.skills_additional .skills_additional_rect .rect1{
+	height: 20%;
+}
+.skills_additional .skills_additional_rect .rect2{
+	height: 24%;
+}
+#skills .skills_program_circle h6,#skills .skills_additional h6{
+	text-align: center;
+}
+
+/*---------------------我的技能-------------------*/
+
+
+/*---------------------我的技能-------------------*/
+
+#project .project_single{
+	display: inline-block;
+	margin: 100px 20px 120px;
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+}
+#project .project_single a{
+	display: block;
+	position: relative;
+}
+#project .project_single a img{
+	width: 300px;
+	height: 300px;
+}
+#project .project_single a span{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	background-color: rgba(0, 0, 0, .6);
+	font-size: 18px;
+	line-height: 300px;
+	color: #fff;
+	letter-spacing: 3px;
+	transform: scale(0);
+	transition: 0.8s;
+}
+#project .project_single a:hover span{
+	transform: scale(1);
+}
+#project .project_single a:hover img{
+	transform: scale(1.2);
+	transition: 0.8s;
+}
+
+/*---------------------我的技能-------------------*/
+
+
+/*---------------------社交主页-------------------*/
+
+#social .social_single{
+	display: inline-block;
+	margin: 100px 20px 120px;
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+}
+#social .social_single a{
+	display: block;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	line-height: 300px;
+}
+#social .social_single a img{
+	vertical-align: middle;
+}
+#social .social_single a span{
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 296px;
+	background-color: #343434;
+	font-size: 18px;
+	line-height: 296px;
+	color: #fff;
+	letter-spacing: 3px;
+	transform: scale(0);
+	transition: 0.8s;
+	/*border-left: 2px solid #642d19;
+	border-top: 2px solid #642d19;
+	border-right: 2px solid #642d19;
+	border-bottom: 2px solid #642d19;*/
+}
+#social .social_single a i{
+	position: absolute;
+	display: block;
+	background-color: #343434;
+	transition: 0.8s;
+}
+#social .social_single a i:nth-child(3){
+	width: 2px;
+	height: 0;
+	bottom: 2px;
+	left: 0px;
+}
+#social .social_single a i:nth-child(4){
+	width: 0;
+	height: 2px;
+	top: 0px;
+	left: 2px;
+}
+#social .social_single a i:nth-child(5){
+	width: 2px;
+	height: 0;
+	top: 2px;
+	right: 0px;
+}
+#social .social_single a i:nth-child(6){
+	width: 0;
+	height: 2px;
+	bottom: 0px;
+	right: 2px;
+}
+#social .social_single a:hover i:nth-child(3){
+	height: 298px;
+}
+#social .social_single a:hover i:nth-child(4){
+	width: 298px;
+}
+#social .social_single a:hover i:nth-child(5){
+	height: 298px;
+}
+#social .social_single a:hover i:nth-child(6){
+	width: 298px;
+}
+#social .social_single a:hover span{
+	transform: scale(1);
+}
+#social .social_single a:hover img{
+	display: none;
+}
+
+/*---------------------社交主页-------------------*/
+
+
+/*---------------------footer-------------------*/
+
+#footer{
+	background-color: #f5f5f5;
+}
+#footer p{
+	text-align: center;
+	font-size: 16px;
+	line-height: 120px;
+}
+
+/*---------------------footer-------------------*/
 
 
 

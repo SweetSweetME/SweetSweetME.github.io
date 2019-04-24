@@ -1,24 +1,34 @@
 window.onload = function(){
-	
-	function getColor(){
-		var r = parseInt(Math.random()*255).toString(16);
-		var g = parseInt(Math.random()*255).toString(16);
-		var b = parseInt(Math.random()*255).toString(16);
-		// console.log('#' + r + g + b);
-		return '#' + r + g + b;
-	}
 
-	var oFirst = document.getElementsByClassName('first')[0];
-	var oH1 = oFirst.getElementsByTagName('h2')[0];
-	var oA1 = oH1.getElementsByTagName('a')[0];
-	// oA1.style.color = getColor();
+    function circle(id,angle){
+    	var canvas = document.getElementById(id);
+		var cxt = canvas.getContext("2d");
+		//画一个空心圆形  凡是路径图形必须先开始路径，画完图之后必须结束路径
+	    //开始新路径
+	    cxt.beginPath();
+	    //重新设置画笔
+	    cxt.lineWidth=40;
+	    cxt.strokeStyle="#F9E1B4";
+	    cxt.arc(100,100,100,1.5*Math.PI,angle*Math.PI,false);
+	    cxt.stroke();
+	    //封闭新路径
+	    cxt.closePath();
+    }
+    circle('circle1', 1.9);
+    circle('circle2', 2);
+    circle('circle3', 0.2);
+    circle('circle4', 1.9);
+    circle('circle5', 1.85);
+    circle('circle6', 0.35);
 
-	var oSecond = document.getElementsByClassName('second')[0];
-	var oH2 = oSecond.getElementsByTagName('h2')[0];
-	var oA2 = oH2.getElementsByTagName('a')[0];
-	// oA2.style.color = getColor();
-	// 
-	
+
+
+
+
+
+
+
+
 	//下落
 	function ball(op){
 		this._init(op);
@@ -31,7 +41,7 @@ window.onload = function(){
 			this.backgroundColor = option.backgroundColor;
 			this.speed = option.speed;
 
-		}
+		},
 		fly: function(){
 			
 		}
