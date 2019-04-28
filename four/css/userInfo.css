@@ -1,0 +1,35 @@
+.userInfo .info{
+	font-size: 18px;
+	background-color: #ffe5b6;
+	padding: 10px;
+	margin-top: 50px;
+}
+.userInfo h5{
+	font-size: 30px;
+	font-weight: 400;
+	color: #ffa501;
+}
+.works{
+	overflow: hidden;
+}
+.works>div{
+	width: 192px;
+	height: 350px;
+	padding: 3px;
+	border: 1px solid #ffa501;
+	overflow: hidden;
+	float: left;
+	margin: 0 20px 50px;
+	border-radius: 5px;
+}
+.works>div video{
+	width: 192px;
+}
+.works>div h6{
+	font-size: 18px;
+	color: #000;
+	margin: 0 0 10px 0;
+}
+.works>div img{
+	width: 192px;
+}

@@ -1,0 +1,26 @@
+.lesson1{
+	margin-top: 30px;
+}
+.lesson1 .container>div h3{
+	font-size: 20px;
+	background-color: #ffa501;
+	padding: 10px 10px;
+	color: #fff;
+}
+.lesson1 .container>div>div{
+	overflow: hidden;
+	margin-bottom: 100px;
+}
+.lesson1 .container>div>div>div{
+	width: 240px;
+	float: left;
+}
+.lesson1 .container>div>div>div a{
+	text-align: center;
+	display: block;
+	margin: 14px 0;
+}
+.lesson1 .container>div>div>div video{
+	width: 220px;
+	margin: 0 10px;
+}

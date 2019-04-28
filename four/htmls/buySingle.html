@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>滑fun网商城-详情页</title>
+	<link rel="stylesheet" type="text/css" href="../css/buy.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/buySingle.css">
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<ul>
+				<li><a href="login.html">登录/注册</a></li>
+				<li><a href="#">帮助中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="search">
+		<div class="container">
+			<div class="logo">
+				<span id="logo"><a href="../index.html" title=""><img class="logoImg" src="../images/hFun.png" alt=""><strong>滑fun网</strong></a></span>
+			</div>
+			<div class="S_input">
+				<input type="text" name="search"><span>搜索</span>
+				<i>宝贝 |</i>
+			</div>
+		</div>
+	</div>
+	<div class="line">
+		
+	</div>
+	<div class="box">
+		<div class="img container">
+			<div id="box">
+				<div id="small_box">
+					<img width="200px" src="../images/good1.jpg" alt="">
+					<span id="mask"></span>
+				</div>
+				<div id="big_box">
+					<img width="800px" src="../images/good1.jpg" alt="">
+				</div>
+			</div>
+			<div class="price">
+				<h4>Justice 小动物系列 李祉兴款 兔子（镭射金）</h4>
+				<p>销售价：<span id="money">￥300.00</span></p>
+				<div>
+					<span>数量</span>
+					<span id="num">1</span>
+					<span id="add">+</span>
+					<span id="sub">-</span>
+					件
+				</div>
+				<p><button>立即购买</button></p>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="container">
+			<p>滑-fun网</p>
+		</div>
+	</footer>
+	<script>
+		window.onload = function(){
+			var box = document.getElementById('box');
+			var small_box = document.getElementById('small_box');
+			var small_img = small_box.children[0];
+			var mask = small_box.children[1];
+			var big_box = document.getElementById('big_box');
+			var big_img = big_box.children[0];
+			
+			small_box.onmousemove = function(e){
+				var pointX = e.clientX;
+				var pointY = e.clientY;
+				if(e.clientX<=box.offsetLeft+mask.offsetWidth/2){
+					pointX = box.offsetLeft+mask.offsetWidth/2;
+				}else if(e.clientX>=box.offsetLeft + small_box.offsetWidth - mask.offsetWidth/2){
+					pointX = box.offsetLeft+small_box.offsetWidth-mask.offsetWidth/2;
+				}
+				if(e.clientY<=box.offsetTop+mask.offsetHeight/2){
+					pointY = box.offsetTop+mask.offsetHeight/2;
+				}else if(e.clientY>=box.offsetTop + small_box.offsetHeight - mask.offsetHeight/2){
+					pointY = box.offsetTop+small_box.offsetHeight-mask.offsetHeight/2;
+				}
+				mask.style.left = pointX - box.offsetLeft - mask.offsetWidth/2 + 'px';
+				mask.style.top = pointY - box.offsetTop - mask.offsetHeight/2 + 'px';
+
+				big_img.style.left = -(pointX - box.offsetLeft - mask.offsetWidth/2)/(small_img.offsetWidth/big_img.offsetWidth) + 'px';
+				big_img.style.top = -(pointY - box.offsetTop - mask.offsetHeight/2)/(small_img.offsetHeight/big_img.offsetHeight) + 'px';
+
+			}
+
+
+		}
+	</script>
+	
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/buy.js"></script>
+	<script src="../js/buySingle.js"></script>
+</body>
+</html>

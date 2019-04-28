@@ -152,14 +152,19 @@ body{
 
 /*---------------------教育背景-------------------*/
 
-#education .time_node_back{
-	background-color: #ffffff;
-	padding: 120px 0 120px 0;
-	text-align: left;
+#education{
+	background: url(../img/slider3.jpg) center / 100% 760px no-repeat;
 	position: relative;
-	left: 90px;
-	width: 500px;
+}
+#education .time_node_back{
+	background-color: rgba(250, 231, 196, 0.77);
+	padding: 120px 0 120px 185px;
+	text-align: left;
+	/*position: relative;*/
+	/*left: 90px;*/
+	width: 100%;
 	margin: 0 auto;
+	box-sizing: border-box;
 }
 #education .time_node_back .time_node1
 ,#education .time_node_back .time_node2{
@@ -169,6 +174,8 @@ body{
 	margin: 0 auto;
 	font-size: 20px;
 	line-height: 100px;
+	font-weight: 600;
+	color: #343434;
 }
 #education .time_node_back .time_node1::before
 ,#education .time_node_back .time_node2::before{
@@ -176,7 +183,7 @@ body{
 	position: absolute;
 	width: 60px;
 	height: 60px;
-	background-color: #F9D0B4;
+	background-color: #ffffff;
 	top: 20px;
 	left: -120px;
 	border-radius: 50%;
@@ -197,18 +204,20 @@ body{
 	line-height: 200px;
 	margin: 0 auto;
 	position: relative;
+	color: #343434;
 }
 #education .time_node_back .time_info::before{
 	content: '';
 	position: absolute;
 	width: 6px;
 	height: 240px;
-	background-color: #f5f5f5;
+	background-color: #ffffff;
 	left: -93px;
 	top: -20px;
 }
 #education .time_node_back .time_info p{
 	font-size: 20px;
+	font-weight: 600;
 }
 #education .time_node_back .time_info p span{
 	margin-right: 50px;
@@ -241,11 +250,17 @@ body{
 #skills .skills_program_single progress{
 	width: 1000px;
 	height: 30px;
-	background-color: #f5f5f5;
+	background-color: #f5f5f5;/*Firefox*/
 	border: none;
 	margin-bottom: 30px;
 }
-#skills .skills_program_single progress::-moz-progress-bar{
+#skills .skills_program_single progress::-moz-progress-bar{/*Firefox*/
+	background-color: #F9E1B4;
+}
+#skills .skills_program_single progress::-webkit-progress-bar{/*Chrome*/
+	background-color: #f5f5f5;
+}
+#skills .skills_program_single progress::-webkit-progress-value{/*Chrome*/
 	background-color: #F9E1B4;
 }
 .skills_program_circle{
@@ -307,9 +322,12 @@ body{
 
 /*---------------------我的技能-------------------*/
 
+#project{
+	margin-bottom: 120px;
+}
 #project .project_single{
 	display: inline-block;
-	margin: 100px 20px 120px;
+	margin: 100px 20px 0;
 	overflow: hidden;
 	width: 300px;
 	height: 300px;

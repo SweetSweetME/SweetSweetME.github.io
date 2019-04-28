@@ -1,0 +1,651 @@
+body{
+	margin: 0;
+}
+.header{
+	width: 100%;
+	height: 1000px;
+}
+.head{
+	width: 100%;
+	height: 1000px;
+}
+.header-img{
+	width: 100%;
+	height: 1000px;
+	background-image: url(img/bg2.jpg);
+	background-size: cover;
+}
+.header-img-above{
+	width: 100%;
+	height: 1000px;
+}
+.header-img-above-img{
+	position: absolute;/*设置位置*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+}
+.header-img-above-img img{
+	width: 100%;
+	height: 1000px;
+	opacity: 0.6;/*设置了透明度*/
+}
+.header-img-above-container{
+	width: 1200px;
+	height: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header-img-above-container-h1p{
+	position: relative;/*不加定位设置透明度影响其他div*/
+	width: 1000px;
+	height: 250px;
+	margin: 60px auto 0;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow:0.5px 0.5px 1px #000000;
+}
+.header-img-above-container-h1p h1{
+	margin: 0;
+	font-size: 110px;
+	font-weight: 400;
+}
+.header-img-above-container-h1p p{
+	margin: 40px 0 0 0;
+	font-size: 45px;
+	font-weight: 500;
+}
+.header-img-above-container-img{
+	position: relative;/*不加定位设置透明度影响其他div*/
+	width: 1000px;
+	height: 500px;
+	margin: 30px auto 0;
+	text-align: center;
+}
+.header-img-above-container-img-img2{
+	position: absolute;
+	top: 65px;
+	left: 251px;
+}
+.header-img-above-container-img-img3{
+	position: absolute;
+	top: 65px;
+	left: 251px;
+}
+.header-img-above-container-btn{
+	position: relative;
+	width: 190px;
+	height: 20px;
+	margin: 120px auto 0;
+}
+.header-img-above-container-btn button{
+	width: 50px;
+	height: 9px;
+	border: 2.5px solid #EDEDED;
+	background-color: rgba(0,0,0,0);
+	margin: 0 5px;
+	border-radius: 5px;
+	cursor: pointer;/*鼠标变成了抓手*/
+}
+.header-img-above-container-btn button:nth-child(1){
+	background-color: #FFFFFF;
+	border: 2.5px solid #FFFFFF;
+}
+.banner{
+	width: 100%;
+	height: 90px;
+}
+.banner-back{
+	width: 100%;
+	height: 84px;/*此处边框宽度没有计入width当中，但是button边框宽度加到了width里面*/
+	border-top: 5px solid #94D5FF;
+	border-bottom: 1px solid #E0E0E0;
+}
+.banner-back-container{
+	width: 1170px;
+	height: 84px;
+	margin: 0 auto;
+	/*不能加overflow:hidden;不然没法儿加下拉菜单；用clear清楚浮动*/
+}
+.banner-logo{
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 84px;
+	overflow: hidden;
+}
+.banner-logo h2{
+	font-size: 50px;
+	font-weight: 100;
+	color: #86868D;
+	margin: 20px 0 0 0;
+}
+.banner-logo img{
+	position: absolute;
+	top: 18px;
+	left: 88px;
+	width: 40px;
+}
+.banner-guidance{
+	float: right;
+	width: 660px;
+	height: 84px;
+}
+.banner-ul-style{
+	width: 660px;
+	height: 84px;
+	margin: 0;
+	padding: 0;
+	/*不能加overflow:hidden;不然没法儿加下拉菜单；用clear清楚浮动*/
+}
+.banner-li-style{
+	float: left;
+	list-style: none;
+	width: 110px;
+	height: 44px;
+	padding-top: 40px;
+	text-align: right;
+}
+.clear{
+	clear: both;
+}
+.banner-guidance ul li a{
+	text-decoration: none;
+	font-size: 13px;
+	color: #868686;
+}
+.banner-guidance ul li img{
+	width: 13px;
+	cursor: pointer;
+}
+.banner-guidance ul li a div{
+	width: 12px;
+	height: 12px;
+	display: inline-block;/*块级元素才可以变形和设置宽高！！*/
+	font-size: 12px;
+	margin-left: 8px;
+	transform: scaleY(0.45);
+}
+.banner-li{
+	position: relative;/*刚好下拉菜单需要设置为相对定位*/
+	top: -1.15px;
+}
+.banner-ul-home-style{
+	width: 130px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 85px;
+	left: 25px;
+	border-top: 3px solid #94D5FF;
+	transition: 0.55s;
+	transform: scaleX(0);
+}
+.banner-li-home-style{
+	text-align: left;
+	list-style: none;
+	color: #D6D6D6;
+	font-size: 12px;
+	width: 115px;
+	height: 50px;
+	padding-left: 15px;
+	line-height: 50px;
+	border-bottom: 1px solid #000000;
+	background-color: #606060;/*背景颜色加到ul里面下面总会有一条白边*/
+}
+.banner-ul-pages-style{
+	width: 130px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 85px;
+	left: 25px;
+	border-top: 3px solid #94D5FF;
+	transition: 0.55s;
+	transform: scaleY(0);
+}
+.banner-li-pages-style{
+	text-align: left;
+	list-style: none;
+	color: #D6D6D6;
+	font-size: 12px;
+	width: 115px;
+	height: 50px;
+	padding-left: 15px;
+	line-height: 50px;
+	border-bottom: 1px solid #000000;
+	background-color: #606060;/*背景颜色加到ul里面下面总会有一条白边*/
+}
+/*services*/
+.servicesback{
+	width: 100%;
+}
+.services{
+	width: 1170px;
+	margin: 0 auto;
+}
+.services-container{
+	width: 1140px;
+	padding: 0 15px;
+}
+.services-h1p{
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+.services-h1p h1{
+	font-size: 65px;
+	font-weight: 500;
+	color: #404040;
+	margin: 80px 0 0 0;
+}
+.services-h1p h1 span{
+	color: #6EBFF3;
+}
+.services-h1p p{
+	font-size: 22px;
+	color: #797979;
+	margin: 30px 0 0 0;
+}
+.services-h1p h1::before{
+	content: "\f013";
+	font-family: FontAwesome;
+	padding-right: 20px;
+}
+.services-middle{
+	margin-top: 100px;
+	width: 100%;
+	background-color: #F9F8F8;
+}
+.services-middle-ul-back{
+	width: 1140px;
+	margin: 0 auto;
+}
+.services-middle-ul{
+	width: 1140px;
+}
+.services-middle-ulul{
+	width: 377px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.services-middle-ulul li{
+	width: 100%;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+.services-middle-ulul li h1{
+	width: 260px;
+	font-size: 22px;
+	font-weight: 400;
+	color: #000;
+	margin: 40px 0 10px 0;
+	padding: 0;
+}
+.services-middle-ulul li p{
+	width: 260px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #9B9B9B;
+	margin: 0;
+	padding: 0;
+}
+.services-middle-ulul-div-left{
+	position: relative;
+	top: -50px;
+	left: 2px;
+	width: 80px;
+	height: 80px;
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	border-radius: 55px;
+	display: inline-block;
+	text-align:center;
+	margin-right: 25px;
+}
+/*before（伪元素）和content配合使用*/
+/*我们没有办法直接选中伪元素来修改它的样式，只能是通过新增伪元素来覆盖之前伪元素的样式。*/
+/*新增伪元素样式,用来覆盖原有的样式*/
+
+/*并没有实现。。。。。*/
+
+.services-middle-ulul-div1-hover::before{
+	content: "\f091";
+	font-family: FontAwesome;
+	font-size: 35px;
+	color: #FFFFFF;
+	position: relative;
+	top: 23px;
+}
+.services-middle-ulul-div2-hover::before{
+	content: "\f065";
+	font-family: FontAwesome;
+	font-size: 35px;
+	color: #6EBFF3;
+	position: relative;
+	top: 23px;
+}
+.services-middle-ulul-div3-hover::before{
+	content: "\f06e";
+	font-family: FontAwesome;
+	font-size: 35px;
+	color: #6EBFF3;
+	position: relative;
+	top: 23px;
+}
+.services-middle-ulul-div4-hover::before{
+	content: "\f188";
+	font-family: FontAwesome;
+	font-size: 35px;
+	color: #6EBFF3;
+	position: relative;
+	top: 23px;
+}
+.services-middle-ulul-div5-hover::before{
+	content: "\f0c3";
+	font-family: FontAwesome;
+	font-size: 35px;
+	color: #6EBFF3;
+	position: relative;
+	top: 23px;
+}
+.services-middle-ulul-div6-hover::before{
+	content: "\f0f4";
+	font-family: FontAwesome;
+	font-size: 35px;
+	color: #6EBFF3;
+	position: relative;
+	top: 23px;
+}
+.services-middle-ulul-div1::before{
+	content: "\f091";
+	font-family: FontAwesome;
+	font-size: 35px;
+	color: #6EBFF3;
+	position: relative;
+	top: 23px;
+}
+.services-middle-ulul-div2::before{
+	content: "\f065";
+	font-family: FontAwesome;
+	font-size: 35px;
+	color: #6EBFF3;
+	position: relative;
+	top: 23px;
+}
+.services-middle-ulul-div3::before{
+	content: "\f06e";
+	font-family: FontAwesome;
+	font-size: 35px;
+	color: #6EBFF3;
+	position: relative;
+	top: 23px;
+}
+.services-middle-ulul-div4::before{
+	content: "\f188";
+	font-family: FontAwesome;
+	font-size: 35px;
+	color: #6EBFF3;
+	position: relative;
+	top: 23px;
+}
+.services-middle-ulul-div5::before{
+	content: "\f0c3";
+	font-family: FontAwesome;
+	font-size: 35px;
+	color: #6EBFF3;
+	position: relative;
+	top: 23px;
+}
+.services-middle-ulul-div6::before{
+	content: "\f0f4";
+	font-family: FontAwesome;
+	font-size: 35px;
+	color: #6EBFF3;
+	position: relative;
+	top: 23px;
+}
+.services-middle-ulul-div-right{
+	display: inline-block;
+}
+.shadow{
+	width: 1300px;
+	margin: 0 auto;
+}
+.shadow img{
+	width: 1300px;
+}
+.shadowdown{
+	width: 100%;
+	height: 450px;
+	background-image: url(img/video-section-bg-opac-retina.png);
+}
+.shadow-h3{
+	width: 1140px;
+	margin: 120px auto 0;
+}
+.shadow-h3 h3{
+	font-size: 45px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	line-height: 70px;
+	color: #FFFFFF;
+}
+.shadow-h3 p{
+	color: #FFFFFF;
+	font-size: 15px;
+	text-align: center;
+	padding: 0;
+	margin: 60px auto 0;
+}
+/*work*/
+.workback{
+	width: 100%;
+}
+.work{
+	width: 1170px;
+	margin: 0 auto;
+}
+.work-container{
+	width: 1140px;
+	padding: 0 15px;
+}
+.work-h1p{
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+.work-h1p h1{
+	font-size: 65px;
+	font-weight: 500;
+	color: #404040;
+	margin: 80px 0 0 0;
+}
+.work-h1p h1 span{
+	color: #6EBFF3;
+}
+.work-h1p p{
+	font-size: 22px;
+	color: #797979;
+	margin: 30px 0 0 0;
+}
+.work-h1p h1::before{
+	content: "\f040";
+	font-family: FontAwesome;
+	padding-right: 20px;
+}
+.work-middle{
+	margin-top: 100px;
+	width: 100%;
+	background-color: #F9F8F8;
+	overflow: hidden;
+}
+.work-middle-btn{
+	width: 1140px;
+	margin: 40px auto 40px;
+	text-align: center;
+}
+.work-middle-btn1{
+	border: 2px solid #6EBFF3;
+	padding: 10px 35px;
+	margin: 0;
+	font-size: 15px;
+	color: #FFFFFF;
+	border-radius: 3px;
+	background-color: #6EBFF3;
+}
+.work-middle-btn1:hover{
+	background-color: #848484;
+	color: #FFFFFF;
+	transition: 0.6s;
+}
+.work-middle-btn2{
+	border: 2px solid #848484;
+	padding: 10px 35px;
+	margin: 0;
+	font-size: 15px;
+	color: #909090;
+	border-radius: 3px;
+	background-color: #F9F8F8;
+}
+.work-middle-btn2:hover{
+	background-color: #848484;
+	color: #FFFFFF;
+	transition: 0.6s;
+}
+.work-middle-btn3{
+	border: 2px solid #848484;
+	padding: 10px 35px;
+	margin: 0;
+	font-size: 15px;
+	color: #909090;
+	border-radius: 3px;
+	background-color: #F9F8F8;
+}
+.work-middle-btn3:hover{
+	background-color: #848484;
+	color: #FFFFFF;
+	transition: 0.6s;
+}
+.work-imgback{
+	width: 100%;
+}
+.work-img1{
+	width: 100%;
+	min-width: 1170px;
+}
+.work-img2{
+	width: 100%;
+	min-width: 1170px;
+}
+.work-imgback ul{
+	margin: 20px 0;
+	padding: 0;
+	overflow: hidden;
+}
+.work-imgback ul li{
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	list-style: none;
+	float: left;
+	position: relative;
+}
+.work-imgback img{
+	width: 94%;
+	padding: 0 3%;
+}
+.work-img-up1{
+	width: 94%;
+	padding: 0 3%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*display: none;*/
+	opacity: 0;
+}
+/*team*/
+.teamback{
+	width: 100%;
+}
+.team{
+	width: 1170px;
+	margin: 0 auto;
+}
+.team-container{
+	width: 1140px;
+	padding: 0 15px;
+}
+.team-h1p{
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+.team-h1p h1{
+	font-size: 65px;
+	font-weight: 500;
+	color: #404040;
+	margin: 80px 0 0 0;
+}
+.team-h1p h1 span{
+	color: #6EBFF3;
+}
+.team-h1p p{
+	font-size: 22px;
+	color: #797979;
+	margin: 30px 0 0 0;
+}
+.team-h1p h1::before{
+	content: "\f135";
+	font-family: FontAwesome;
+	padding-right: 20px;
+}
+/*us*/
+.usback{
+	width: 100%;
+}
+.us{
+	width: 1170px;
+	margin: 0 auto;
+}
+.us-container{
+	width: 1140px;
+	padding: 0 15px;
+}
+.us-h1p{
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+.us-h1p h1{
+	font-size: 65px;
+	font-weight: 500;
+	color: #404040;
+	margin: 80px 0 0 0;
+}
+.us-h1p h1 span{
+	color: #6EBFF3;
+}
+.us-h1p p{
+	font-size: 22px;
+	color: #797979;
+	margin: 30px 0 0 0;
+}
+.us-h1p h1::before{
+	content: "\f044";
+	font-family: FontAwesome;
+	padding-right: 20px;
+}

@@ -1,0 +1,339 @@
+body{
+	margin: 0;
+}
+h2{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li{
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+strong{
+	font-weight: normal;
+}
+p{
+	margin: 0;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+#logo{
+	margin-left: 30px;
+}
+#logo strong{
+	display: none;
+}
+.logoImg{
+	width: 160px;
+	vertical-align: middle;
+}
+.nav_up{
+	background-color: #fff;
+	overflow: hidden;
+}
+.nav_up h2{
+	font-size: 30px;
+	float: right;
+	margin-right: 50px;
+	color: #ffa501;
+	line-height: 100px;
+}
+.nav_up span{
+	font-size: 20px;
+	color: #ffa501;
+	float: left;
+	margin-left: 30px;
+	line-height: 100px;
+}
+.nav{
+	background-color: #343434;
+}
+.nav ul{
+	overflow: hidden;
+}
+.nav li{
+	float: left;
+	margin: 0 6px;
+	background-color: #343434;
+	color: #fff;
+	cursor: pointer;
+}
+.nav li a{
+	color: #fff;
+	line-height: 46px;
+	padding: 0 20px;
+}
+.nav li:hover{
+	background-color: #ffa501;
+}
+.nav li.active{
+	background-color: #ffa501;
+}
+.banner{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.banner .auto_img{
+	text-align: center;
+	position: relative;
+}
+.banner .auto_img img{
+	width: 100%;
+	height: 300px;
+}
+.banner .auto_img span{
+	position: absolute;
+	top: 0;
+	color: #ffa501;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 0 10px;
+	line-height: 300px;
+	background-color: rgba(0,0,0,.6);
+}
+.banner .auto_img span:nth-child(2){
+	left: 0;
+}
+.banner .auto_img span:nth-child(3){
+	right: 0;
+}
+.banner .circle{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+.banner .circle div{
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 2px;
+}
+.banner .circle div.active{
+	background-color: #ffa501;
+}
+.recommend h2,.video h2,.information h2,.culture h2{
+	color: #ffa501;
+	font-size: 30px;
+	text-align: center;
+	margin: 40px 0;
+	position: relative;
+}
+.recommend h2::after,.video h2::after,.information h2::after,.culture h2::after{
+	content: '';
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	margin-left: -15px;
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: #ffa501;
+}
+.recommend .box{
+	overflow: hidden;
+}
+.recommend .box a{
+	width: 280px;
+	border: 10px solid #f6d18d;
+	height: 240px;
+	display: block;
+	background-color: #fff;
+	float: left;
+	padding: 15px;
+	margin: 10px;
+	box-sizing: border-box;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.recommend .box a:hover{
+	background-color: #343434;
+}
+.recommend .box a i{
+	display: block;
+	width: 230px;
+	white-space: nowrap;
+	text-align: center;
+	margin-top: 20px;
+	font-style: normal;
+}
+.recommend .box a:hover i{
+	margin-top: 10px;
+	color: #fff;
+}
+.recommend .box a img{
+	width: 180px;
+	height: 90px;
+	position: absolute;
+	bottom: 14px;
+	margin-left: -90px;
+}
+.recommend .box a:hover img{
+	bottom: 24px;
+}
+.video .hf1{
+	width: 280px;
+}
+.video .box{
+	overflow: hidden;
+}
+.video .box>div{
+	width: 360px;
+	margin: 10px 20px;
+	background-color: #343434;
+	text-align: center;
+	float: left;
+}
+.video .box>div>div{
+	background-color: #ffa501;
+	padding: 10px 0;
+}
+.video .box>div>div>span{
+	display: inline-block;
+	padding: 0 16px;
+	position: relative;
+	cursor: pointer;
+	margin-left: 26px;
+}
+.video .box>div>div>span:first-child::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -10px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/icon.png) -71px -112px / 180px no-repeat;
+}
+.video .box>div>div>span:last-child::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -10px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/icon.png) -44px -84px / 180px no-repeat;
+}
+.information .box{
+	overflow: hidden;
+}
+.information .box div.left{
+	overflow: hidden;
+	width: 60%;
+	border: 5px solid #f6d18d;
+	padding: 20px;
+	float: left;
+}
+.information .box div.left .tab{
+	padding-bottom: 20px;
+}
+.information .box div.left .detail{
+	font-size: 18px;
+	line-height: 30px;
+	overflow: hidden;
+}
+.information .box div.left .detail img{
+	width: 320px;
+	float: left;
+	margin-right: 30px;
+}
+.information .box div.left button{
+	width: 60px;
+	height: 36px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid #343434;
+}
+.information .box div.left button:nth-child(2){
+	margin-left: -5px;
+}
+.information .box div.left button:nth-child(3){
+	margin-left: -6px;
+}
+.information .box div.left button:hover{
+	background-color: #ffa501;
+	color: #fff;
+	border-bottom: none;
+}
+.information .box div.left button.active{
+	background-color: #ffa501;
+	color: #fff;
+	border-bottom: none;
+}
+.information .box div.right{
+	width: 30%;
+	height: 338px;
+	overflow: hidden;
+	padding: 20px;
+	float: right;
+	border: 5px solid #f6d18d;
+	border-bottom-right-radius: 60px;
+	position: relative;
+}
+.information .box div.right:after{
+	content: '';
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	background-color: #fee2af;
+	bottom: -5px;
+	right: -5px;
+	border-bottom-right-radius: 50%;
+	border-top-left-radius: 2px;
+	z-index: 999;
+}
+.information .box div.right>div{
+	animation: slide 5s infinite alternate;
+}
+.information .box div.right p{
+	font-size: 18px;
+	margin: 10px 0;
+	cursor: pointer;
+}
+.information .box div.right p:hover{
+	color: #ffa501;
+}
+@keyframes slide{
+	0%{
+		margin-top: 0;
+	}
+	100%{
+		margin-top: -360px;
+	}
+}
+.culture .box div{
+	width: 2400px;
+}
+.culture .box div img{
+	width: 235px;
+}
+.culture .box{
+	overflow: hidden;
+}
+footer{
+	height: 100px;
+	background-color: #343434;
+	color: #fff;
+	margin-top: 60px;
+}
+footer p{
+	text-align: center;
+	line-height: 100px;
+}

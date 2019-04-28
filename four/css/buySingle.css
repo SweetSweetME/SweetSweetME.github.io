@@ -1,0 +1,104 @@
+.line{
+	width: 100%;
+	height: 3px;
+	background-color: #ffa501;
+}
+#big_box img{
+	vertical-align: top;
+}
+.box{
+	height: 700px;
+}
+.img{
+	height: 700px;
+	overflow: hidden;
+}
+#box{
+	width: 200px;
+	position: relative;
+	margin: 100px 0 50px 0;
+	border: 1px solid #eee;
+	float: left;
+}
+#big_box{
+	width: 400px;
+	height: 400px;
+	border: 1px solid #ffa501;
+	border-radius: 5px;
+	overflow: hidden;
+	position: absolute;
+	top: -50px;
+	left: 230px;
+	/*display: none;*/
+}
+#mask{
+	width: 100px;
+	height: 100px;
+	background-color: rgba(255,255,0,.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: move;
+	/*display: none;*/
+}
+#big_box img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.price{
+	float: right;
+	margin: 50px 0 0 0;
+}
+.price h4{
+	line-height: 30px;
+	background-color: #eee;
+	padding: 10px 30px;
+	margin-bottom: 30px;
+}
+.price p{
+	margin: 0 0 30px 0;
+}
+.price p span{
+	color: #f00;
+}
+.price div{
+	position: relative;
+}
+.price div>span:nth-child(2){
+	width: 54px;
+	display: inline-block;
+	background-color: #fff;
+	border: 2px solid #eee;
+	vertical-align: middle;
+	margin: 0 40px 0 20px;
+	text-align: center;
+	line-height: 54px;
+	font-size: 18px;
+}
+.price div>span:nth-child(4){
+	bottom: 0px;
+}
+.price div>span:nth-child(3),.price div>span:nth-child(4){
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	background-color: #eee;
+	position: absolute;
+	left: 115px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 24px;
+	cursor: pointer;
+}
+.price button{
+	width: 120px;
+	height: 50px;
+	background-color: #ffa501;
+	border: 1px solid #ffa501;
+	margin: 60px 0 0 0;
+	border-radius: 5px;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+}

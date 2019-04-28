@@ -1,0 +1,65 @@
+/**********************登录注册的样式**********************/
+.user .register,.user .login{
+	text-align: center;
+	padding: 120px 0;
+}
+.user .container{
+	height: 560px;
+	overflow: hidden;
+}
+#register{
+	position: relative;
+	background-color: #fff;
+}
+input{
+	width: 300px;
+	height: 40px;
+	background-color: #fff;
+	border: 1px solid #ffa501;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #000;
+	padding: 2px 5px;
+	line-height: 36px;
+	margin: 10px 0;
+}
+input.check{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+.agreement{
+	color: #ffa501;
+}
+.agreement:hover{
+	color: #e7980a;
+}
+input.submit{
+	background-color: #ffa501;
+	color: #fff;
+}
+#to_login,#to_register{
+	color: #ffa501;
+}
+#to_login:hover,#to_register:hover{
+	color: #e7980a;
+	cursor: pointer;
+}
+/**********************登录注册的样式**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
