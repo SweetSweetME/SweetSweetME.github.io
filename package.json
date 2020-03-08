@@ -1,0 +1,39 @@
+{
+  "name": "SweetSweetME.github.io",
+  "version": "1.0.0",
+  "description": "### 认识我",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.2.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-markdown": "^4.3.1",
+    "swr": "^0.1.18"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SweetSweetME/SweetSweetME.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SweetSweetME/SweetSweetME.github.io/issues"
+  },
+  "homepage": "https://github.com/SweetSweetME/SweetSweetME.github.io#readme"
+}
